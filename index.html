@@ -213,13 +213,23 @@
 
   if (mobileMenuBtn && mobileMenu) {
     mobileMenuBtn.addEventListener("click", () => {
+      e.stopPropagation(); // <<< blocca la propagazione
       mobileMenu.classList.remove("hidden");
     });
   }
 
   if (closeMobileMenuBtn && mobileMenu) {
     closeMobileMenuBtn.addEventListener("click", () => {
+      e.stopPropagation(); // <<< blocca la propagazione
       mobileMenu.classList.add("hidden");
+    });
+  }
+
+  // Impedisci che il click dentro il menu chiuda tutto
+  const mobileMenuContent = mobileMenu.querySelector(".w-64");
+  if (mobileMenuContent) {
+    mobileMenuContent.addEventListener("click", (e) => {
+      e.stopPropagation();
     });
   }
 
