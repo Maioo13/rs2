@@ -182,69 +182,77 @@
 </div>
 
 <script>
-  // Menu lingua desktop
-  const langBtn = document.getElementById("langMenuButton");
-  const langMenu = document.getElementById("langMenu");
+  // Esegui questo codice solo quando l'intera struttura della pagina è pronta
+  document.addEventListener('DOMContentLoaded', function() {
 
-  if (langBtn && langMenu) {
-    langBtn.addEventListener("click", (e) => {
-      e.stopPropagation();
-      langMenu.classList.toggle("hidden");
-    });
-  }
+    // --- SELETTORI DEGLI ELEMENTI ---
+    // Ora siamo sicuri che tutti questi elementi esistono
+    const langBtn = document.getElementById("langMenuButton");
+    const langMenu = document.getElementById("langMenu");
+    const langBtnMobile = document.getElementById("langMenuButtonMobile");
+    const langMenuMobile = document.getElementById("langMenuMobile");
+    const mobileMenuBtn = document.getElementById("mobileMenuButton");
+    const mobileMenu = document.getElementById("mobileMenu");
+    const closeMobileMenuBtn = document.getElementById("closeMobileMenu");
 
-  // Menu lingua mobile
-  const langBtnMobile = document.getElementById("langMenuButtonMobile");
-  const langMenuMobile = document.getElementById("langMenuMobile");
+    // --- LISTENER DEGLI EVENTI ---
 
-  if (langBtnMobile && langMenuMobile) {
-    langBtnMobile.addEventListener("click", (e) => {
-      e.stopPropagation();
-      langMenuMobile.classList.toggle("hidden");
-    });
-  }
-
-  // Menu mobile
-  const mobileMenuBtn = document.getElementById("mobileMenuButton");
-  const mobileMenu = document.getElementById("mobileMenu");
-  const closeMobileMenuBtn = document.getElementById("closeMobileMenu");
-
-  if (mobileMenuBtn && mobileMenu) {
-    mobileMenuBtn.addEventListener("click", (e) => {
-      e.stopPropagation();
-      mobileMenu.classList.remove("hidden");
-    });
-  }
-
-  if (closeMobileMenuBtn && mobileMenu) {
-    closeMobileMenuBtn.addEventListener("click", () => {
-      mobileMenu.classList.add("hidden");
-    });
-  }
-
-  // Chiudi menu quando si clicca fuori
-  document.addEventListener("click", (e) => {
     // Menu lingua desktop
-    if (langBtn && langMenu && !langBtn.contains(e.target) && !langMenu.contains(e.target)) {
-      langMenu.classList.add("hidden");
+    if (langBtn && langMenu) {
+      langBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        langMenu.classList.toggle("hidden");
+      });
     }
 
     // Menu lingua mobile
-    if (langBtnMobile && langMenuMobile && !langBtnMobile.contains(e.target) && !langMenuMobile.contains(e.target)) {
-      langMenuMobile.classList.add("hidden");
+    if (langBtnMobile && langMenuMobile) {
+      langBtnMobile.addEventListener("click", (e) => {
+        e.stopPropagation();
+        langMenuMobile.classList.toggle("hidden");
+      });
     }
 
-    // Menu mobile overlay
-    if (mobileMenu && !mobileMenu.querySelector('div').contains(e.target) && e.target !== mobileMenuBtn) {
-      mobileMenu.classList.add('hidden');
+    // Pulsante per APRIRE il menu mobile
+    if (mobileMenuBtn && mobileMenu) {
+      mobileMenuBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        mobileMenu.classList.remove("hidden");
+      });
     }
-  });
 
-  // Chiudi menu mobile quando si ridimensiona la finestra
-  window.addEventListener("resize", () => {
-    if (window.innerWidth >= 1024 && mobileMenu) {
-      mobileMenu.classList.add("hidden");
+    // Pulsante per CHIUDERE il menu mobile (la X)
+    if (closeMobileMenuBtn && mobileMenu) {
+      closeMobileMenuBtn.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden");
+      });
     }
+
+    // Listener globale per CHIUDERE i menu quando si clicca fuori
+    document.addEventListener("click", (e) => {
+      // Chiude il menu lingua desktop se il click è esterno
+      if (langMenu && !langMenu.classList.contains('hidden') && !langBtn.contains(e.target)) {
+        langMenu.classList.add("hidden");
+      }
+
+      // Chiude il menu lingua mobile se il click è esterno
+      if (langMenuMobile && !langMenuMobile.classList.contains('hidden') && !langBtnMobile.contains(e.target)) {
+        langMenuMobile.classList.add("hidden");
+      }
+
+      // Chiude il menu mobile principale se il click è sull'overlay (fuori dal pannello)
+      if (mobileMenu && e.target === mobileMenu) {
+        mobileMenu.classList.add('hidden');
+      }
+    });
+
+    // Chiudi menu mobile quando si ridimensiona la finestra
+    window.addEventListener("resize", () => {
+      if (window.innerWidth >= 1024 && mobileMenu && !mobileMenu.classList.contains('hidden')) {
+        mobileMenu.classList.add("hidden");
+      }
+    });
+
   });
 </script>
 
