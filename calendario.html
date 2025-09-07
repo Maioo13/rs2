@@ -269,19 +269,26 @@
 
   // --- LOGICA CALENDARIO ED EVENTI ---
 
-  // 1. DEFINIZIONE DEGLI EVENTI
-  // NOTA: I mesi in JavaScript sono 0-indicizzati (0=Gennaio, 1=Febbraio, ..., 9=Ottobre, 10=Novembre)
-  const events = [
-    { day: 28, month: 9, year: 2024, title: "Weekly Easy Run", description: "Join us for a relaxed run through the city center. All paces welcome!", time: "Meeting: 6:30 PM, Start: 7:00 PM" },
-    { day: 1, month: 10, year: 2024, title: "Easy Aperitivo Night", description: "Enjoy a casual evening with fellow runners at a local bar.", time: "Meeting: 7:00 PM" },
-    { day: 8, month: 10, year: 2024, title: "Easy Gelatino", description: "Cool down with some delicious gelato after your run.", time: "Meeting: 8:00 PM" },
-    { day: 15, month: 10, year: 2024, title: "Easy Bagnetto", description: "Take a refreshing dip in the sea after a morning run.", time: "Meeting: 9:00 AM" },
-    // Aggiungi altri eventi qui
-    { day: 7, month: 8, year: 2025, title: "Easy Brunch", description: "Easy Run per chi vuole macinare più km del solito", time: "Meeting: 9:00 AM" },
-    { day: 11, month: 8, year: 2025, title: "Weekly Easy Run", description: "Join us for a relaxed run through the city center. All paces welcome!", time: "Meeting: 6:30 PM, Start: 7:00 PM" },
-    { day: 18, month: 8, year: 2025, title: "Weekly Easy Run", description: "Join us for a relaxed run through the city center. All paces welcome!", time: "Meeting: 6:30 PM, Start: 7:00 PM" },
-    { day: 25, month: 8, year: 2025, title: "Weekly Easy Run", description: "Join us for a relaxed run through the city center. All paces welcome!", time: "Meeting: 6:30 PM, Start: 7:00 PM" }
-  ];
+  // 1. CARICAMENTO DEGLI EVENTI DAL FILE JSON
+  let events = [];
+
+  // Funzione per caricare gli eventi dal file JSON
+  async function loadEvents() {
+    try {
+      const response = await fetch('data/events.json');
+      const data = await response.json();
+      events = data.events;
+      console.log('Eventi caricati:', events);
+      
+      // Dopo aver caricato gli eventi, genera il calendario e la lista
+      initCalendar();
+    } catch (error) {
+      console.error('Errore nel caricamento degli eventi:', error);
+      // Se il caricamento fallisce, usa un array vuoto
+      events = [];
+      initCalendar();
+    }
+  }
 
   // 2. FUNZIONE PER GENERARE UN SINGOLO CALENDARIO
   function generateCalendar(month, year) {
@@ -369,7 +376,7 @@
   }
 
   // 4. FUNZIONE PRINCIPALE PER RENDERIZZARE LA PAGINA
-  function renderPage() {
+  function initCalendar() {
     const calendarContainer = document.getElementById("calendarContainer");
     if (!calendarContainer) return;
 
@@ -386,8 +393,8 @@
     renderEventList();
   }
 
-  // Avvia tutto al caricamento della pagina
-  document.addEventListener('DOMContentLoaded', renderPage);
+  // Avvia tutto al caricamento della pagina caricando prima gli eventi
+  document.addEventListener('DOMContentLoaded', loadEvents);
 
 </script>
 

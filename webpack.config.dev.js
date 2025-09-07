@@ -11,6 +11,6 @@ module.exports = merge(common, {
     liveReload: true,
     hot: true,
     open: false,
-    static: ['./'],
+    static: ['./', './data'],
   },
 });
