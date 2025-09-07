@@ -14,6 +14,7 @@
   <link rel="icon" type="image/png" href="icons/logo.png" />
 
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script src="js/language-switcher.js"></script>
 </head>
 <body>
 <div class="relative flex size-full min-h-screen flex-col bg-[#fcf9f8] group/design-root overflow-x-hidden" style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
@@ -34,10 +35,10 @@
       <!-- Menu desktop -->
       <div class="hidden lg:flex flex-1 justify-end gap-8">
         <div class="flex items-center gap-9">
-          <a class="text-[#1c110d] text-sm font-medium leading-normal" href="index.html">Home</a>
-          <a class="text-[#1c110d] text-sm font-medium leading-normal" href="calendario.html">Events</a>
-          <a class="text-[#1c110d] text-sm font-medium leading-normal" href="chiSiamo.html">About</a>
-          <a class="text-[#1c110d] text-sm font-medium leading-normal" href="contatti.html">Contact</a>
+          <a class="text-[#1c110d] text-sm font-medium leading-normal" href="index.html" data-translate="nav_home">Home</a>
+          <a class="text-[#1c110d] text-sm font-medium leading-normal" href="calendario.html" data-translate="nav_events">Eventi</a>
+          <a class="text-[#1c110d] text-sm font-medium leading-normal" href="chiSiamo.html" data-translate="nav_about">Chi Siamo</a>
+          <a class="text-[#1c110d] text-sm font-medium leading-normal" href="contatti.html" data-translate="nav_contact">Contatti</a>
         </div>
         <div class="flex gap-2 items-center">
           <div class="relative">
@@ -87,10 +88,10 @@
           </button>
         </div>
         <nav class="flex flex-col p-4 space-y-4">
-          <a class="text-[#1c110d] text-lg font-medium py-2 border-b border-[#f3eae7]" href="index.html">Home</a>
-          <a class="text-[#1c110d] text-lg font-medium py-2 border-b border-[#f3eae7]" href="calendario.html">Events</a>
-          <a class="text-[#1c110d] text-lg font-medium py-2 border-b border-[#f3eae7]" href="chiSiamo.html">About</a>
-          <a class="text-[#1c110d] text-lg font-medium py-2" href="contatti.html">Contact</a>
+          <a class="text-[#1c110d] text-lg font-medium py-2 border-b border-[#f3eae7]" href="index.html" data-translate="nav_home">Home</a>
+          <a class="text-[#1c110d] text-lg font-medium py-2 border-b border-[#f3eae7]" href="calendario.html" data-translate="nav_events">Eventi</a>
+          <a class="text-[#1c110d] text-lg font-medium py-2 border-b border-[#f3eae7]" href="chiSiamo.html" data-translate="nav_about">Chi Siamo</a>
+          <a class="text-[#1c110d] text-lg font-medium py-2" href="contatti.html" data-translate="nav_contact">Contatti</a>
         </nav>
       </div>
     </div>
@@ -99,7 +100,7 @@
     <div class="px-4 md:px-8 lg:px-40 flex flex-1 justify-center py-5">
       <div class="layout-content-container flex flex-col w-full max-w-[960px] flex-1">
         <div class="flex justify-center p-4">
-          <h1 class="text-[#1c110d] tracking-light text-2xl md:text-[32px] font-bold">Events Calendar</h1>
+          <h1 class="text-[#1c110d] tracking-light text-2xl md:text-[32px] font-bold" data-translate="events_title">Calendario Eventi</h1>
         </div>
 
         <!-- Contenitore dei calendari (verrà riempito da JS) -->
@@ -109,7 +110,7 @@
 
         <!-- Lista degli eventi (verrà riempita da JS) -->
         <div id="eventListContainer" class="px-4 mt-8">
-          <h2 class="text-[#1c110d] text-xl md:text-[22px] font-bold leading-tight tracking-[-0.015em] pb-3 pt-5">Upcoming Events</h2>
+          <h2 class="text-[#1c110d] text-xl md:text-[22px] font-bold leading-tight tracking-[-0.015em] pb-3 pt-5" data-translate="upcoming_events">Prossimi Eventi</h2>
           <!-- Eventi generati dinamicamente -->
         </div>
       </div>
@@ -122,9 +123,9 @@
   <div class="flex max-w-[960px] flex-1 flex-col">
     <footer class="flex flex-col gap-4 md:gap-6 px-4 md:px-5 py-6 md:py-10 text-center @container">
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4 md:gap-6 @[480px]:justify-around">
-        <a class="text-[#9b604b] text-sm md:text-base font-normal leading-normal min-w-32" href="#">Contact</a>
-        <a class="text-[#9b604b] text-sm md:text-base font-normal leading-normal min-w-32" href="#">Privacy Policy</a>
-        <a class="text-[#9b604b] text-sm md:text-base font-normal leading-normal min-w-32" href="#">Terms of Service</a>
+        <a class="text-[#9b604b] text-sm md:text-base font-normal leading-normal min-w-32" href="#" data-translate="contact_us">Contattaci</a>
+        <a class="text-[#9b604b] text-sm md:text-base font-normal leading-normal min-w-32" href="#" data-translate="privacy_policy">Privacy Policy</a>
+        <a class="text-[#9b604b] text-sm md:text-base font-normal leading-normal min-w-32" href="#" data-translate="terms_service">Termini di Servizio</a>
       </div>
       <div class="flex flex-wrap justify-center gap-4">
 
@@ -382,7 +383,7 @@
     if(upcomingEvents.length > 0) {
       container.innerHTML += listHtml;
     } else {
-      container.innerHTML += '<p class="text-[#9b604b] text-center py-4">No upcoming events. Check back soon!</p>';
+      container.innerHTML += '<p class="text-[#9b604b] text-center py-4" data-translate="no_events">Nessun evento in programma. Torna a trovarci presto!</p>';
     }
   }
 

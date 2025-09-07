@@ -14,6 +14,7 @@
   <link rel="icon" type="image/png" href="icons/logo.png" />
 
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script src="js/language-switcher.js"></script>
 </head>
 <body>
 <div class="relative flex size-full min-h-screen flex-col bg-[#fcf9f8] group/design-root overflow-x-hidden" style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
@@ -34,10 +35,10 @@
       <!-- Menu desktop -->
       <div class="hidden lg:flex flex-1 justify-end gap-8">
         <div class="flex items-center gap-9">
-          <a class="text-[#1c110d] text-sm font-medium leading-normal" href="index.html">Home</a>
-          <a class="text-[#1c110d] text-sm font-medium leading-normal" href="calendario.html">Events</a>
-          <a class="text-[#1c110d] text-sm font-medium leading-normal" href="chiSiamo.html">About</a>
-          <a class="text-[#1c110d] text-sm font-medium leading-normal" href="contatti.html">Contact</a>
+          <a class="text-[#1c110d] text-sm font-medium leading-normal" href="index.html" data-translate="nav_home">Home</a>
+          <a class="text-[#1c110d] text-sm font-medium leading-normal" href="calendario.html" data-translate="nav_events">Eventi</a>
+          <a class="text-[#1c110d] text-sm font-medium leading-normal" href="chiSiamo.html" data-translate="nav_about">Chi Siamo</a>
+          <a class="text-[#1c110d] text-sm font-medium leading-normal" href="contatti.html" data-translate="nav_contact">Contatti</a>
         </div>
         <div class="flex gap-2 items-center">
           <div class="relative">
@@ -112,10 +113,10 @@
           </button>
         </div>
         <nav class="flex flex-col p-4 space-y-4">
-          <a class="text-[#1c110d] text-lg font-medium py-2 border-b border-[#f3eae7]" href="index.html">Home</a>
-          <a class="text-[#1c110d] text-lg font-medium py-2 border-b border-[#f3eae7]" href="calendario.html">Events</a>
-          <a class="text-[#1c110d] text-lg font-medium py-2 border-b border-[#f3eae7]" href="chiSiamo.html">About</a>
-          <a class="text-[#1c110d] text-lg font-medium py-2" href="contatti.html">Contact</a>
+          <a class="text-[#1c110d] text-lg font-medium py-2 border-b border-[#f3eae7]" href="index.html" data-translate="nav_home">Home</a>
+          <a class="text-[#1c110d] text-lg font-medium py-2 border-b border-[#f3eae7]" href="calendario.html" data-translate="nav_events">Eventi</a>
+          <a class="text-[#1c110d] text-lg font-medium py-2 border-b border-[#f3eae7]" href="chiSiamo.html" data-translate="nav_about">Chi Siamo</a>
+          <a class="text-[#1c110d] text-lg font-medium py-2" href="contatti.html" data-translate="nav_contact">Contatti</a>
         </nav>
       </div>
     </div>
@@ -132,38 +133,39 @@
               <div class="flex flex-col gap-2 text-center">
                 <h1
                   class="text-white text-2xl md:text-4xl lg:text-5xl font-black leading-tight tracking-[-0.033em]"
+                  data-translate="hero_title"
                 >
                   Run Society
                 </h1>
-                <h2 class="text-white text-sm md:text-base font-normal leading-normal px-4">
-                  Trieste's running club. A safe space to meet new people. No fees, just bring your joy.
+                <h2 class="text-white text-sm md:text-base font-normal leading-normal px-4" data-translate="hero_subtitle">
+                  Il gruppo di corsa di Trieste. Uno spazio sicuro per incontrare nuove persone. Nessuna quota, porta solo la tua gioia.
                 </h2>
               </div>
               <button
                 class="flex min-w-[140px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 md:h-12 px-4 md:px-5 bg-[#f15b24] text-[#fcf9f8] text-sm md:text-base font-bold leading-normal tracking-[0.015em]"
               >
-                <a class="truncate" href="calendario.html">Esplora gli eventi</a>
+                <a class="truncate" href="calendario.html" data-translate="hero_button">Esplora gli eventi</a>
               </button>
             </div>
           </div>
         </div>
 
         <div class="px-4">
-          <h2 class="text-[#1c110d] text-xl md:text-[22px] font-bold leading-tight tracking-[-0.015em] pb-3 pt-5">Weekly Run</h2>
-          <p class="text-[#1c110d] text-sm md:text-base font-normal leading-normal pb-3 pt-1 text-center">
-            Every Tuesday at 6 PM, we meet at the entrance of Porto Vecchio for a casual run around the city. All levels are welcome!
+          <h2 class="text-[#1c110d] text-xl md:text-[22px] font-bold leading-tight tracking-[-0.015em] pb-3 pt-5" data-translate="weekly_run_title">Corsa Settimanale</h2>
+          <p class="text-[#1c110d] text-sm md:text-base font-normal leading-normal pb-3 pt-1 text-center" data-translate="weekly_run_description">
+            Ogni martedì alle 18, ci incontriamo all'ingresso del Porto Vecchio per una corsa rilassante in città. Tutti i livelli sono benvenuti!
           </p>
           <div class="flex justify-center">
             <div class="flex flex-col sm:flex-row gap-3 py-3 max-w-[480px] justify-center w-full">
               <button
                 class="flex min-w-[140px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 md:h-12 px-4 bg-[#f15b24] text-[#fcf9f8] text-sm md:text-base font-bold leading-normal tracking-[0.015em] flex-1"
               >
-                <a class="truncate" href="calendario.html">Guarda il calendario</a>
+                <a class="truncate" href="calendario.html" data-translate="calendar_button">Guarda il calendario</a>
               </button>
               <button
                 class="flex min-w-[140px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 md:h-12 px-4 bg-[#f3eae7] text-[#1c110d] text-sm md:text-base font-bold leading-normal tracking-[0.015em] flex-1"
               >
-                <a class="truncate" href="chiSiamo.html">Di più su di noi</a>
+                <a class="truncate" href="chiSiamo.html" data-translate="about_button">Di più su di noi</a>
               </button>
             </div>
           </div>
@@ -176,9 +178,9 @@
       <div class="flex max-w-[960px] flex-1 flex-col">
         <footer class="flex flex-col gap-4 md:gap-6 px-4 md:px-5 py-6 md:py-10 text-center @container">
           <div class="flex flex-col sm:flex-row items-center justify-center gap-4 md:gap-6 @[480px]:justify-around">
-            <a class="text-[#9b604b] text-sm md:text-base font-normal leading-normal min-w-32" href="#">Contact</a>
-            <a class="text-[#9b604b] text-sm md:text-base font-normal leading-normal min-w-32" href="#">Privacy Policy</a>
-            <a class="text-[#9b604b] text-sm md:text-base font-normal leading-normal min-w-32" href="#">Terms of Service</a>
+            <a class="text-[#9b604b] text-sm md:text-base font-normal leading-normal min-w-32" href="#" data-translate="contact_us">Contattaci</a>
+            <a class="text-[#9b604b] text-sm md:text-base font-normal leading-normal min-w-32" href="#" data-translate="privacy_policy">Privacy Policy</a>
+            <a class="text-[#9b604b] text-sm md:text-base font-normal leading-normal min-w-32" href="#" data-translate="terms_service">Termini di Servizio</a>
           </div>
           <div class="flex flex-wrap justify-center gap-4">
 
@@ -244,7 +246,7 @@
             -->
 
           </div>
-          <p class="text-[#9b604b] text-xs md:text-base font-normal leading-normal">@2024 Run Society. All rights reserved.</p>
+          <p class="text-[#9b604b] text-xs md:text-base font-normal leading-normal" data-translate="rights_reserved">@2024 Run Society. Tutti i diritti riservati.</p>
         </footer>
       </div>
     </footer>
