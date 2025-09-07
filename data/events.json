@@ -1,6 +1,14 @@
 {
   "events": [
     {
+      "day": 8,
+      "month": 8,
+      "year": 2025,
+      "title": "Santa Jimmy",
+      "description": "Join us for a relaxed run through the city center. All paces welcome!",
+      "time": "Meeting: 6:30 PM, Start: 7:00 PM"
+    },
+    {
       "day": 28,
       "month": 9,
       "year": 2024,
