@@ -277,8 +277,12 @@
     try {
       const response = await fetch('data/events.json');
       const data = await response.json();
-      events = data.events;
-      console.log('Eventi caricati:', events);
+      // Converte i mesi da numeri normali (1-12) a JavaScript (0-11)
+      events = data.events.map(event => ({
+        ...event,
+        month: event.month - 1 // Sottrae 1 per convertire al formato JavaScript
+      }));
+      console.log('Eventi caricati e convertiti:', events);
       
       // Dopo aver caricato gli eventi, genera il calendario e la lista
       initCalendar();

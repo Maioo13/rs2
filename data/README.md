@@ -24,7 +24,7 @@ Gli eventi sono memorizzati nel file `data/events.json`. Questo file contiene un
 ## Campi degli Eventi
 
 - **day**: Giorno del mese (1-31)
-- **month**: Mese (0-11, dove 0=Gennaio, 1=Febbraio, ..., 11=Dicembre)
+- **month**: Mese (1-12, dove 1=Gennaio, 2=Febbraio, ..., 12=Dicembre)
 - **year**: Anno (es. 2024, 2025)
 - **title**: Titolo dell'evento
 - **description**: Descrizione dell'evento
@@ -63,11 +63,16 @@ Gli eventi sono memorizzati nel file `data/events.json`. Questo file contiene un
 }
 ```
 
-## Nota Importante
+## Mesi - Numerazione Normale
 
-Ricorda che i mesi in JavaScript iniziano da 0:
-- Gennaio = 0
-- Febbraio = 1
-- Marzo = 2
+Ora puoi usare la numerazione normale per i mesi:
+- Gennaio = 1
+- Febbraio = 2
+- Marzo = 3
 - ...
-- Dicembre = 11
+- Settembre = 9
+- Ottobre = 10
+- Novembre = 11
+- Dicembre = 12
+
+Il sistema converte automaticamente per JavaScript!
