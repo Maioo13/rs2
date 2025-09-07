@@ -10,9 +10,7 @@ Gli eventi sono memorizzati nel file `data/events.json`. Questo file contiene un
 {
   "events": [
     {
-      "day": 28,
-      "month": 9,
-      "year": 2024,
+      "date": "28/09/2024",
       "title": "Weekly Easy Run",
       "description": "Join us for a relaxed run through the city center. All paces welcome!",
       "time": "Meeting: 6:30 PM, Start: 7:00 PM"
@@ -23,9 +21,7 @@ Gli eventi sono memorizzati nel file `data/events.json`. Questo file contiene un
 
 ## Campi degli Eventi
 
-- **day**: Giorno del mese (1-31)
-- **month**: Mese (1-12, dove 1=Gennaio, 2=Febbraio, ..., 12=Dicembre)
-- **year**: Anno (es. 2024, 2025)
+- **date**: Data nel formato dd/mm/aaaa (es. "15/09/2024" per il 15 settembre 2024)
 - **title**: Titolo dell'evento
 - **description**: Descrizione dell'evento
 - **time**: Orario di ritrovo e partenza
@@ -42,9 +38,7 @@ Gli eventi sono memorizzati nel file `data/events.json`. Questo file contiene un
 ### Corsa Settimanale
 ```json
 {
-  "day": 18,
-  "month": 8,
-  "year": 2025,
+  "date": "18/08/2025",
   "title": "Weekly Easy Run",
   "description": "Join us for a relaxed run through the city center. All paces welcome!",
   "time": "Meeting: 6:30 PM, Start: 7:00 PM"
@@ -54,25 +48,18 @@ Gli eventi sono memorizzati nel file `data/events.json`. Questo file contiene un
 ### Evento Speciale
 ```json
 {
-  "day": 15,
-  "month": 9,
-  "year": 2025,
+  "date": "15/09/2025",
   "title": "Run & Aperitivo",
   "description": "Corsa serale seguita da aperitivo al porto",
   "time": "Ritrovo: 19:00, Partenza: 19:30"
 }
 ```
 
-## Mesi - Numerazione Normale
+## Formato Data dd/mm/aaaa
 
-Ora puoi usare la numerazione normale per i mesi:
-- Gennaio = 1
-- Febbraio = 2
-- Marzo = 3
-- ...
-- Settembre = 9
-- Ottobre = 10
-- Novembre = 11
-- Dicembre = 12
+Ora è semplicissimo! Usa il formato normale delle date italiane:
+- "08/09/2025" = 8 settembre 2025
+- "15/10/2024" = 15 ottobre 2024  
+- "01/01/2025" = 1 gennaio 2025
 
-Il sistema converte automaticamente per JavaScript!
+Il sistema converte automaticamente tutto!

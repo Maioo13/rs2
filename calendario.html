@@ -277,11 +277,16 @@
     try {
       const response = await fetch('data/events.json');
       const data = await response.json();
-      // Converte i mesi da numeri normali (1-12) a JavaScript (0-11)
-      events = data.events.map(event => ({
-        ...event,
-        month: event.month - 1 // Sottrae 1 per convertire al formato JavaScript
-      }));
+      // Converte le date dal formato dd/mm/aaaa a oggetti con day, month (JS), year
+      events = data.events.map(event => {
+        const [day, month, year] = event.date.split('/').map(Number);
+        return {
+          ...event,
+          day: day,
+          month: month - 1, // Converte a formato JavaScript (0-11)
+          year: year
+        };
+      });
       console.log('Eventi caricati e convertiti:', events);
       
       // Dopo aver caricato gli eventi, genera il calendario e la lista
