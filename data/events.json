@@ -1,25 +1,31 @@
 {
   "events": [
     {
-      "date": "06/09/2025",
-      "title": "Easy Brunch",
-      "description": "Easy Run per chi vuole macinare più km del solito",
-      "time": "Meeting: 9:00 AM"
-    },
-    {
-      "date": "11/09/2025",
+      "date": "02/10/2025",
       "title": "Weekly Easy Run",
       "description": "Join us for a relaxed run through the city center. All paces welcome!",
       "time": "Meeting: 6:30 PM, Start: 7:00 PM"
     },
     {
-      "date": "18/09/2025",
+      "date": "09/10/2025",
       "title": "Weekly Easy Run",
       "description": "Join us for a relaxed run through the city center. All paces welcome!",
       "time": "Meeting: 6:30 PM, Start: 7:00 PM"
     },
     {
-      "date": "25/09/2025",
+      "date": "16/10/2025",
+      "title": "Weekly Easy Run",
+      "description": "Join us for a relaxed run through the city center. All paces welcome!",
+      "time": "Meeting: 6:30 PM, Start: 7:00 PM"
+    },
+    {
+      "date": "23/10/2025",
+      "title": "Weekly Easy Run",
+      "description": "Join us for a relaxed run through the city center. All paces welcome!",
+      "time": "Meeting: 6:30 PM, Start: 7:00 PM"
+    },
+    {
+      "date": "30/10/2025",
       "title": "Weekly Easy Run",
       "description": "Join us for a relaxed run through the city center. All paces welcome!",
       "time": "Meeting: 6:30 PM, Start: 7:00 PM"
