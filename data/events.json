@@ -1,37 +1,7 @@
 {
   "events": [
     {
-      "date": "08/10/2025",
-      "title": "Santa Jimmy",
-      "description": "Join us for a relaxed run through the city center. All paces welcome!",
-      "time": "Meeting: 6:30 PM, Start: 7:00 PM"
-    },
-    {
-      "date": "28/10/2024",
-      "title": "Weekly Easy Run",
-      "description": "Join us for a relaxed run through the city center. All paces welcome!",
-      "time": "Meeting: 6:30 PM, Start: 7:00 PM"
-    },
-    {
-      "date": "01/11/2024",
-      "title": "Easy Aperitivo Night",
-      "description": "Enjoy a casual evening with fellow runners at a local bar.",
-      "time": "Meeting: 7:00 PM"
-    },
-    {
-      "date": "08/11/2024",
-      "title": "Easy Gelatino",
-      "description": "Cool down with some delicious gelato after your run.",
-      "time": "Meeting: 8:00 PM"
-    },
-    {
-      "date": "15/11/2024",
-      "title": "Easy Bagnetto",
-      "description": "Take a refreshing dip in the sea after a morning run.",
-      "time": "Meeting: 9:00 AM"
-    },
-    {
-      "date": "07/09/2025",
+      "date": "06/09/2025",
       "title": "Easy Brunch",
       "description": "Easy Run per chi vuole macinare più km del solito",
       "time": "Meeting: 9:00 AM"
