@@ -14,6 +14,7 @@
   <link rel="icon" type="image/png" href="icons/logo.png" />
 
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script src="js/language-switcher.js" defer></script>
 </head>
 <body>
 <div class="relative flex size-full min-h-screen flex-col bg-[#fcf9f8] group/design-root overflow-x-hidden" style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
@@ -124,8 +125,29 @@
     <div class="px-4 md:px-8 lg:px-40 flex flex-1 justify-center py-5">
       <div class="layout-content-container flex flex-col w-full max-w-[960px] flex-1">
         <div class="p-4">
-          <h1 class="text-[#1c110d] tracking-light text-2xl md:text-[32px] font-bold leading-tight">Chi Siamo</h1>
+          <h1 class="text-[#1c110d] tracking-light text-2xl md:text-[32px] font-bold leading-tight" data-translate="nav_about">Chi Siamo</h1>
         </div>
+
+        <p class="text-[#1c110d] text-sm md:text-base font-normal leading-normal pb-3 pt-1 px-4" data-translate="about_intro">
+          Run Society è molto più di un semplice gruppo di corsa.
+        </p>
+        <p class="text-[#1c110d] text-sm md:text-base font-normal leading-normal pb-3 pt-1 px-4" data-translate="about_p1">
+          Run Society è nato da un'idea semplice: creare un punto d'incontro per chi ama la corsa, ma soprattutto per chi cerca uno spazio sicuro dove sentirsi a casa. Siamo un gruppo di ragazzi, in gran parte universitari, uniti non solo dai chilometri percorsi, ma dalla voglia di condividere esperienze autentiche. Per noi, correre è un pretesto per essere se stessi, liberi da ogni giudizio, in una comunità che celebra l'accettazione e il rispetto reciproco.
+        </p>
+        <p class="text-[#1c110d] text-sm md:text-base font-normal leading-normal pb-3 pt-1 px-4" data-translate="about_subtitle">
+          La nostra filosofia? Zero costi, solo bei momenti.
+        </p>
+        <p class="text-[#1c110d] text-sm md:text-base font-normal leading-normal pb-3 pt-1 px-4" data-translate="about_p2">
+          Dimentica le quote di iscrizione. L'unica cosa che ti chiediamo di portare è il tuo entusiasmo e la voglia di divertirti. Le nostre corse sono pensate per essere accessibili a tutti, con percorsi di circa 5 km adatti a ogni ritmo. Che tu sia un runner esperto o abbia appena allacciato le scarpe per la prima volta, troverai sempre qualcuno con cui condividere il passo.
+        </p>
+        <p class="text-[#1c110d] text-sm md:text-base font-normal leading-normal pb-3 pt-1 px-4" data-translate="about_p3">
+          Ma Run Society non si ferma al traguardo. La vera magia accade dopo: un "Easy Aperitivo" per chiacchierare, un "Easy Gelatino" per rinfrescarsi, o persino un "Easy Bagnetto" in mare durante l'estate. Oltre alla corsa, la nostra comunità vive su WhatsApp, dove organizziamo serate di team building, dal bowling ai giochi da tavolo, e partecipiamo insieme a gare ed eventi.
+        </p>
+        <p class="text-[#1c110d] text-sm md:text-base font-normal leading-normal pb-3 pt-1 px-4" data-translate="about_p4">
+          Se cerchi un modo per conoscere persone nuove, esplorare la città e far parte di qualcosa di speciale, hai trovato il posto giusto. Ti aspettiamo!
+        </p>
+
+        <!--
         <p class="text-[#1c110d] text-sm md:text-base font-normal leading-normal pb-3 pt-1 px-4">
           Run Society is more than just a running club; it's a vibrant community built on friendship, shared experiences, and a love for running. We believe in creating a safe
           and inclusive space where runners of all levels can come together, connect, and enjoy the journey. Our philosophy centers around the joy of running, the camaraderie
@@ -144,6 +166,8 @@
           Whether you're a seasoned marathoner or just starting your running journey, Run Society welcomes you with open arms. Join us and experience the joy of running in a
           supportive and fun-loving community.
         </p>
+        -->
+
       </div>
     </div>
 
@@ -152,9 +176,9 @@
       <div class="flex max-w-[960px] flex-1 flex-col">
         <footer class="flex flex-col gap-4 md:gap-6 px-4 md:px-5 py-6 md:py-10 text-center @container">
           <div class="flex flex-col sm:flex-row items-center justify-center gap-4 md:gap-6 @[480px]:justify-around">
-            <a class="text-[#9b604b] text-sm md:text-base font-normal leading-normal min-w-32" href="#">Contact</a>
-            <a class="text-[#9b604b] text-sm md:text-base font-normal leading-normal min-w-32" href="#">Privacy Policy</a>
-            <a class="text-[#9b604b] text-sm md:text-base font-normal leading-normal min-w-32" href="#">Terms of Service</a>
+            <a class="text-[#9b604b] text-sm md:text-base font-normal leading-normal min-w-32" href="#" data-translate="contact_us">Contact</a>
+            <a class="text-[#9b604b] text-sm md:text-base font-normal leading-normal min-w-32" href="#" data-translate="privacy_policy">Privacy Policy</a>
+            <a class="text-[#9b604b] text-sm md:text-base font-normal leading-normal min-w-32" href="#" data-translate="terms_service">Terms of Service</a>
           </div>
           <div class="flex flex-wrap justify-center gap-4">
 
