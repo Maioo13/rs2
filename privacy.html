@@ -153,28 +153,41 @@
     </div>
 
     <!-- Contenuto principale -->
-    <div class="px-4 md:px-8 lg:px-40 flex flex-1 justify-center py-5">
+    <main class="px-4 md:px-8 lg:px-40 flex flex-1 justify-center py-5">
       <div class="layout-content-container flex flex-col w-full max-w-[960px] flex-1">
-        <div class="p-4"><h1 class="text-[#1c110d] tracking-light text-2xl md:text-[32px] font-bold leading-tight">Privacy Policy</h1></div>
-        <p class="text-[#1c110d] text-sm md:text-base font-normal leading-normal pb-3 pt-1 px-4">
-          By participating in Run Society events, you acknowledge and agree that photographs and videos may be taken during the event. These images may include your likeness
-          and may be used by Run Society for promotional purposes, including but not limited to social media platforms, website, and marketing materials. Your participation
-          constitutes your consent to the use of your image in such materials. If you do not wish to be photographed or filmed, please inform the event organizer or
-          photographer at the event. However, please be aware that it may not always be possible to avoid capturing your image in group settings. If you have any concerns or
-          wish to request the removal of a specific image, please contact us at privacy@runsociety.com. We are committed to protecting your privacy and will address your
-          concerns promptly.
-        </p>
+        <div class="p-4">
+          <h1 class="text-[#1c110d] tracking-light text-2xl md:text-[32px] font-bold leading-tight" data-translate="privacy_title">Informativa Privacy</h1>
+        </div>
+        <div class="space-y-4 px-4 text-justify">
+          <p class="text-[#1c110d] text-sm md:text-base font-normal leading-relaxed" data-translate="privacy_p1">
+            Il Run Club “Run Society” è un ritrovo informale di persone che condividono la passione per la corsa e lo stare insieme. Durante gli eventi organizzati, è possibile che vengano realizzati foto e video con l’obiettivo di documentare e promuovere le attività del Club.
+          </p>
+          <p class="text-[#1c110d] text-sm md:text-base font-normal leading-relaxed" data-translate="privacy_p2">
+            Partecipando agli incontri, ciascun partecipante accetta che:
+          </p>
+
+          <!-- LISTA CORRETTA -->
+          <ul class="list-disc list-outside space-y-2 pl-5 text-[#1c110d] text-sm md:text-base font-normal leading-relaxed">
+            <li data-translate="privacy_li1">La propria immagine, eventualmente ritratta in foto o video, possa essere utilizzata per finalità di comunicazione e promozione del Run Club (ad esempio pubblicazione su social network, sito web, locandine, articoli di giornale o altro materiale divulgativo relativo alle attività del Club);</li>
+            <li data-translate="privacy_li2">Le immagini non saranno in alcun caso vendute né cedute a terzi per scopi commerciali;</li>
+            <li data-translate="privacy_li3">Eventuali utilizzi al di fuori delle finalità sopra indicate verranno effettuati previo esplicito consenso dell’interessato.</li>
+          </ul>
+
+          <p class="text-[#1c110d] text-sm md:text-base font-normal leading-relaxed" data-translate="privacy_p3">
+            La partecipazione agli eventi implica quindi la presa d’atto e l’accettazione della presente informativa.
+          </p>
+        </div>
       </div>
-    </div>
+    </main>
 
     <!-- Footer -->
     <footer class="flex justify-center mt-auto" style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
       <div class="flex max-w-[960px] flex-1 flex-col">
         <footer class="flex flex-col gap-4 md:gap-6 px-4 md:px-5 py-6 md:py-10 text-center @container">
           <div class="flex flex-col sm:flex-row items-center justify-center gap-4 md:gap-6 @[480px]:justify-around">
-            <a class="text-[#9b604b] text-sm md:text-base font-normal leading-normal min-w-32" href="#">Contact</a>
-            <a class="text-[#9b604b] text-sm md:text-base font-normal leading-normal min-w-32" href="#">Privacy Policy</a>
-            <a class="text-[#9b604b] text-sm md:text-base font-normal leading-normal min-w-32" href="#">Terms of Service</a>
+            <a class="text-[#9b604b] text-sm md:text-base font-normal leading-normal min-w-32" href="contatti.html" data-translate="contact_us">Contatti</a>
+            <a class="text-[#9b604b] text-sm md:text-base font-normal leading-normal min-w-32" href="privacy.html" data-translate="privacy_policy">Informativa Privacy</a>
+            <a class="text-[#9b604b] text-sm md:text-base font-normal leading-normal min-w-32" href="esoneri.html" data-translate="terms_service">Liberatoria</a>
           </div>
           <div class="flex flex-wrap justify-center gap-4">
 
