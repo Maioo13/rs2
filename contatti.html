@@ -159,9 +159,10 @@
           action="https://formspree.io/f/xyzdoeja"
           method="POST"
           class="w-full max-w-[480px] mx-auto"
+          id="contact-form"
         >
           <div class="flex flex-col gap-4 p-4">
-            <!-- Campo Nascosto per il Reindirizzamento -->
+            <!-- Puoi lasciare questo come fallback, ma il redirect vero lo fa lo script -->
             <input type="hidden" name="_next" value="grazie.html">
 
             <label class="flex flex-col w-full">
@@ -170,44 +171,44 @@
                 name="name"
                 placeholder="Il tuo nome"
                 class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#1c110d] focus:outline-0 focus:ring-0 border-none bg-[#f3eae7] h-12 md:h-14 placeholder:text-[#9b604b] p-4 text-sm md:text-base"
+                data-translate="contact_form_name"
                 required
               />
             </label>
-
             <label class="flex flex-col w-full">
               <input
                 type="email"
                 name="email"
                 placeholder="La tua Email"
                 class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#1c110d] focus:outline-0 focus:ring-0 border-none bg-[#f3eae7] h-12 md:h-14 placeholder:text-[#9b604b] p-4 text-sm md:text-base"
+                data-translate="contact_form_email"
                 required
               />
             </label>
-
             <label class="flex flex-col w-full">
               <input
                 type="text"
                 name="subject"
                 placeholder="Oggetto"
                 class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#1c110d] focus:outline-0 focus:ring-0 border-none bg-[#f3eae7] h-12 md:h-14 placeholder:text-[#9b604b] p-4 text-sm md:text-base"
+                data-translate="contact_form_subject"
                 required
               />
             </label>
-
             <label class="flex flex-col w-full">
       <textarea
         name="message"
         placeholder="Il tuo messaggio"
         class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#1c110d] focus:outline-0 focus:ring-0 border-none bg-[#f3eae7] min-h-36 placeholder:text-[#9b604b] p-4 text-sm md:text-base"
+        data-translate="contact_form_message"
         required
       ></textarea>
             </label>
-
             <button
               type="submit"
               class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 md:h-12 px-4 bg-[#f15b24] text-[#fcf9f8] text-sm md:text-base font-bold tracking-[0.015em] transition-opacity hover:opacity-90"
             >
-              <span class="truncate">Invia</span>
+              <span class="truncate" data-translate="contact_form_send">Invia</span>
             </button>
           </div>
         </form>
@@ -372,6 +373,48 @@
     });
 
   });
+
+  //Brute redirect
+  (function () {
+    const form = document.getElementById("contact-form");
+    if (!form) return;
+
+    form.addEventListener("submit", async function (e) {
+      e.preventDefault();
+
+      const submitBtn = form.querySelector('button[type="submit"]');
+      const action = form.getAttribute("action");
+      const method = form.getAttribute("method") || "POST";
+
+      try {
+        submitBtn?.setAttribute("disabled", "true");
+
+        const data = new FormData(form);
+        const res = await fetch(action, {
+          method,
+          body: data,
+          headers: { Accept: "application/json" }
+        });
+
+        if (res.ok) {
+          // ✅ Redirect client-side, stile invariato
+          window.location.assign("grazie.html");
+        } else {
+          // prova a mostrare eventuali errori Formspree
+          const json = await res.json().catch(() => null);
+          const msg =
+            json?.errors?.map((e) => e.message).join("\n") ||
+            "Errore nell'invio. Riprova più tardi.";
+          alert(msg);
+          submitBtn?.removeAttribute("disabled");
+        }
+      } catch (err) {
+        alert("Errore di rete. Controlla la connessione e riprova.");
+        submitBtn?.removeAttribute("disabled");
+      }
+    });
+  })();
+
 </script>
 
 </body>
