@@ -10,7 +10,7 @@
     href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800"
   />
 
-  <title>Contact Us | Run Society Trieste</title>
+  <title>Contattaci | Run Society Trieste</title>
   <link rel="icon" type="image/png" href="icons/logo.png" />
 
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
@@ -153,50 +153,74 @@
     </div>
 
     <!-- Contenuto principale -->
-    <div class="px-4 md:px-8 lg:px-40 flex flex-1 justify-center py-5">
+    <main class="px-4 md:px-8 lg:px-40 flex flex-1 justify-center py-5">
       <div class="layout-content-container flex flex-col w-full max-w-[960px] flex-1">
-        <div class="p-4"><h1 class="text-[#1c110d] tracking-light text-2xl md:text-[32px] font-bold leading-tight">Contattaci</h1></div>
+        <div class="p-4">
+          <h1 class="text-[#1c110d] tracking-light text-2xl md:text-[32px] font-bold leading-tight" data-translate="contact_title">Contattaci</h1>
+        </div>
 
-        <form class="w-full max-w-[480px] mx-auto">
-          <div class="flex flex-col gap-4 p-4">
-            <label class="flex flex-col w-full">
-              <input
-                placeholder="Your Name"
-                class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#1c110d] focus:outline-0 focus:ring-0 border-none bg-[#f3eae7] focus:border-none h-12 md:h-14 placeholder:text-[#9b604b] p-4 text-sm md:text-base font-normal leading-normal"
-                value=""
-              />
-            </label>
-            <label class="flex flex-col w-full">
-              <input
-                placeholder="Your Email"
-                class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#1c110d] focus:outline-0 focus:ring-0 border-none bg-[#f3eae7] focus:border-none h-12 md:h-14 placeholder:text-[#9b604b] p-4 text-sm md:text-base font-normal leading-normal"
-                value=""
-              />
-            </label>
-            <label class="flex flex-col w-full">
-              <input
-                placeholder="Subject"
-                class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#1c110d] focus:outline-0 focus:ring-0 border-none bg-[#f3eae7] focus:border-none h-12 md:h-14 placeholder:text-[#9b604b] p-4 text-sm md:text-base font-normal leading-normal"
-                value=""
-              />
-            </label>
-            <label class="flex flex-col w-full">
-                    <textarea
-                      placeholder="Your Message"
-                      class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#1c110d] focus:outline-0 focus:ring-0 border-none bg-[#f3eae7] focus:border-none min-h-36 placeholder:text-[#9b604b] p-4 text-sm md:text-base font-normal leading-normal"
-                    ></textarea>
-            </label>
-            <button
-              class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 md:h-12 px-4 bg-[#f15b24] text-[#fcf9f8] text-sm md:text-base font-bold leading-normal tracking-[0.015em]"
-            >
-              <span class="truncate">Send</span>
-            </button>
-          </div>
+        <form
+          action="https://formspree.io/f/xyzdoeja"
+          method="POST"
+        class="w-full max-w-[480px] mx-auto"
+        >
+        <div class="flex flex-col gap-4 p-4">
+          <!-- Campo Nascosto per il Reindirizzamento -->
+          <input type="hidden" name="_next" value="https://maioo13.github.io/rs2/grazie.html"> <!-- <<< MODIFICA CON IL TUO URL -->
+
+          <label class="flex flex-col w-full">
+            <input
+              type="text"
+              name="name"
+              placeholder="Il tuo nome"
+              class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#1c110d] focus:outline-0 focus:ring-0 border-none bg-[#f3eae7] h-12 md:h-14 placeholder:text-[#9b604b] p-4 text-sm md:text-base"
+              data-translate="contact_form_name"
+              required
+            />
+          </label>
+          <label class="flex flex-col w-full">
+            <input
+              type="email"
+              name="email"
+              placeholder="La tua Email"
+              class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#1c110d] focus:outline-0 focus:ring-0 border-none bg-[#f3eae7] h-12 md:h-14 placeholder:text-[#9b604b] p-4 text-sm md:text-base"
+              data-translate="contact_form_email"
+              required
+            />
+          </label>
+          <label class="flex flex-col w-full">
+            <input
+              type="text"
+              name="subject"
+              placeholder="Oggetto"
+              class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#1c110d] focus:outline-0 focus:ring-0 border-none bg-[#f3eae7] h-12 md:h-14 placeholder:text-[#9b604b] p-4 text-sm md:text-base"
+              data-translate="contact_form_subject"
+              required
+            />
+          </label>
+          <label class="flex flex-col w-full">
+                <textarea
+                  name="message"
+                  placeholder="Il tuo messaggio"
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#1c110d] focus:outline-0 focus:ring-0 border-none bg-[#f3eae7] min-h-36 placeholder:text-[#9b604b] p-4 text-sm md:text-base"
+                  data-translate="contact_form_message"
+                  required
+                ></textarea>
+          </label>
+          <button
+            type="submit"
+            class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 md:h-12 px-4 bg-[#f15b24] text-[#fcf9f8] text-sm md:text-base font-bold tracking-[0.015em] transition-opacity hover:opacity-90"
+          >
+            <span class="truncate" data-translate="contact_form_send">Invia</span>
+          </button>
+        </div>
         </form>
 
-        <p class="text-[#1c110d] text-sm md:text-base font-normal leading-normal pb-3 pt-1 px-4 text-center">Or reach us directly at runsociety@gmail.com</p>
+        <p class="text-[#1c110d] text-sm md:text-base font-normal leading-normal pb-3 pt-1 px-4 text-center" data-translate="contact_direct">
+          Oppure contattaci direttamente a runsocietyts@gmail.com
+        </p>
       </div>
-    </div>
+    </main>
 
     <!-- Footer -->
     <footer class="flex justify-center mt-auto" style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif; background-color: #fcf9f8;'>

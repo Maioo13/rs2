@@ -151,36 +151,32 @@
     </div>
 
     <!-- Contenuto principale -->
-    <div class="px-4 md:px-8 lg:px-40 flex flex-1 justify-center py-5">
-      <div class="layout-content-container flex flex-col w-full max-w-[960px] flex-1">
-        <!-- Spazio per visual -->
-        <div class="w-full h-16 md:h-24 lg:h-32 flex items-center justify-center">
+    <main class="px-4 md:px-8 flex flex-1 justify-center items-center">
+      <div class="layout-content-container flex flex-col w-full max-w-[960px]">
+
+        <div class="w-full flex items-center justify-center">
           <div class="text-6xl md:text-8xl lg:text-9xl text-[#f3eae7] font-black">404</div>
         </div>
 
         <div class="text-center px-4">
-          <h1 class="text-[#1c110d] tracking-light text-2xl md:text-3xl lg:text-[32px] font-bold leading-tight pb-3 pt-6">
-            Oops! Page Not Found
+          <h1 class="text-[#1c110d] tracking-light text-2xl md:text-3xl lg:text-[32px] font-bold leading-tight pb-3 pt-6" data-translate="not_found_title">
+            Oops! Pagina Non Trovata
           </h1>
-          <p class="text-[#1c110d] text-sm md:text-base font-normal leading-normal pb-6 pt-1 max-w-2xl mx-auto">
-            The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.
+          <p class="text-[#1c110d] text-sm md:text-base font-normal leading-normal pb-6 pt-1 max-w-2xl mx-auto" data-translate="not_found_desc">
+            La pagina che cerchi potrebbe essere stata rimossa, rinominata o temporaneamente non disponibile.
           </p>
 
           <div class="flex flex-col sm:flex-row gap-3 justify-center max-w-md mx-auto">
-            <button
-              class="flex min-w-[140px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 md:h-12 px-4 bg-[#f15b24] text-[#fcf9f8] text-sm md:text-base font-bold leading-normal tracking-[0.015em] flex-1"
-            >
-              <a href="index.html" class="truncate">Go to Homepage</a>
-            </button>
-            <button
-              class="flex min-w-[140px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 md:h-12 px-4 bg-[#f3eae7] text-[#1c110d] text-sm md:text-base font-bold leading-normal tracking-[0.015em] flex-1"
-            >
-              <a href="calendario.html" class="truncate">Explore Events</a>
-            </button>
+            <a href="index.html" class="flex min-w-[140px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 md:h-12 px-4 bg-[#f15b24] text-[#fcf9f8] text-sm md:text-base font-bold leading-normal tracking-[0.015em] flex-1">
+              <span class="truncate" data-translate="not_found_btn_home">Torna alla Homepage</span>
+            </a>
+            <a href="calendario.html" class="flex min-w-[140px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 md:h-12 px-4 bg-[#f3eae7] text-[#1c110d] text-sm md:text-base font-bold leading-normal tracking-[0.015em] flex-1">
+              <span class="truncate" data-translate="not_found_btn_events">Esplora gli Eventi</span>
+            </a>
           </div>
         </div>
       </div>
-    </div>
+    </main>
 
     <!-- Footer -->
     <footer class="flex justify-center mt-auto" style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif; background-color: #fcf9f8;'>

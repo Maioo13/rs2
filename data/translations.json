@@ -27,7 +27,21 @@
     "cookie_title": "Questo sito utilizza i cookie",
     "cookie_text": "Usiamo solo cookie tecnici essenziali per farti vivere la migliore esperienza possibile.",
     "cookie_accept": "Accetta",
-    "cookie_reject": "Rifiuta"
+    "cookie_reject": "Rifiuta",
+    "not_found_title": "Oops! Pagina Non Trovata",
+    "not_found_desc": "La pagina che cerchi potrebbe essere stata rimossa, rinominata o temporaneamente non disponibile.",
+    "not_found_btn_home": "Torna alla Homepage",
+    "not_found_btn_events": "Esplora gli Eventi",
+    "liability_title": "Esonero Responsabilità",
+    "liability_text": "La partecipazione a qualsiasi attività di Run Society è a proprio rischio. Run Society, i suoi organizzatori e i partecipanti non sono responsabili per eventuali infortuni, incidenti, perdite o danni a proprietà personali che possano verificarsi durante le attività del club. Partecipando, riconosci e accetti questi rischi e ti impegni a tenere Run Society indenne da qualsiasi reclamo derivante dalla tua partecipazione.",
+    "contact_title": "Contattaci",
+    "contact_form_name": "Il tuo nome",
+    "contact_form_email": "La tua Email",
+    "contact_form_subject": "Oggetto",
+    "contact_form_message": "Il tuo messaggio",
+    "contact_form_send": "Invia",
+    "contact_direct": "Oppure contattaci direttamente a runsocietyts@gmail.com",
+    "page_title_contact": "Contattaci | Run Society Trieste"
   },
   "en": {
     "nav_home": "Home",
@@ -57,6 +71,20 @@
     "cookie_title": "This website uses cookies",
     "cookie_text": "We only use essential technical cookies to give you the best possible experience.",
     "cookie_accept": "Accept",
-    "cookie_reject": "Decline"
+    "cookie_reject": "Decline",
+    "not_found_title": "Oops! Page Not Found",
+    "not_found_desc": "The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.",
+    "not_found_btn_home": "Go to Homepage",
+    "not_found_btn_events": "Explore Events",
+    "liability_title": "Liability Disclaimer",
+    "liability_text": "Participation in any Run Society activity is at the individual's own risk. Run Society, its organizers, and participants are not liable for any injuries, accidents, loss, or damage to personal property that may occur during club activities. By participating, you acknowledge and accept these risks and agree to hold Run Society harmless from any claims arising from your involvement.",
+    "contact_title": "Contact Us",
+    "contact_form_name": "Your Name",
+    "contact_form_email": "Your Email",
+    "contact_form_subject": "Subject",
+    "contact_form_message": "Your Message",
+    "contact_form_send": "Send",
+    "contact_direct": "Or reach us directly at runsocietyts@gmail.com",
+    "page_title_contact": "Contact Us | Run Society Trieste"
   }
 }
