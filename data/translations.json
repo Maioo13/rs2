@@ -56,7 +56,9 @@
     "liability_li2": "È personalmente responsabile per la propria condotta e per gli eventuali danni causati a sé stesso, a terzi o a cose durante lo svolgimento degli incontri;",
     "liability_li3": "Non potrà in alcun modo avanzare pretese risarcitorie nei confronti del Run Club “Run Society”, dei suoi promotori o degli altri partecipanti in caso di infortunio, danno o perdita di beni personali;",
     "liability_li4": "Partecipa agli eventi in piena autonomia, sollevando da ogni responsabilità il Run Club “Run Society”.",
-    "liability_p3": "La partecipazione implica l’accettazione integrale della presente liberatoria di responsabilità."
+    "liability_p3": "La partecipazione implica l’accettazione integrale della presente liberatoria di responsabilità.",
+    "thanks_title": "Grazie per il tuo messaggio!",
+    "thanks_subtitle": "Ti risponderemo il prima possibile."
   },
   "en": {
     "nav_home": "Home",
@@ -115,6 +117,8 @@
     "liability_li2": "Are personally responsible for their own conduct and for any damage caused to themselves, third parties, or property during the meetings;",
     "liability_li3": "Cannot in any way make claims for compensation against the “Run Society” Run Club, its promoters, or other participants in case of injury, damage, or loss of personal property;",
     "liability_li4": "Participate in the events in full autonomy, releasing the “Run Society” Run Club from any liability.",
-    "liability_p3": "Participation implies full acceptance of this liability waiver."
+    "liability_p3": "Participation implies full acceptance of this liability waiver.",
+    "thanks_title": "Thank you for your message!",
+    "thanks_subtitle": "We will get back to you as soon as possible."
   }
 }
