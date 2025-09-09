@@ -23,7 +23,11 @@
     "about_subtitle": "La nostra filosofia? Zero costi, solo bei momenti.",
     "about_p2": "Dimentica le quote di iscrizione. L'unica cosa che ti chiediamo di portare è il tuo entusiasmo e la voglia di divertirti. Le nostre corse sono pensate per essere accessibili a tutti, con percorsi di circa 5 km adatti a ogni ritmo. Che tu sia un runner esperto o abbia appena allacciato le scarpe per la prima volta, troverai sempre qualcuno con cui condividere il passo.",
     "about_p3": "Ma Run Society non si ferma al traguardo. La vera magia accade dopo: un \"Easy Aperitivo\" per chiacchierare, un \"Easy Gelatino\" per rinfrescarsi, o persino un \"Easy Bagnetto\" in mare durante l'estate. Oltre alla corsa, la nostra comunità vive su WhatsApp, dove organizziamo serate di team building, dal bowling ai giochi da tavolo, e partecipiamo insieme a gare ed eventi.",
-    "about_p4": "Se cerchi un modo per conoscere persone nuove, esplorare la città e far parte di qualcosa di speciale, hai trovato il posto giusto. Ti aspettiamo!"
+    "about_p4": "Se cerchi un modo per conoscere persone nuove, esplorare la città e far parte di qualcosa di speciale, hai trovato il posto giusto. Ti aspettiamo!",
+    "cookie_title": "Questo sito utilizza i cookie",
+    "cookie_text": "Usiamo solo cookie tecnici essenziali per farti vivere la migliore esperienza possibile.",
+    "cookie_accept": "Accetta",
+    "cookie_reject": "Rifiuta"
   },
   "en": {
     "nav_home": "Home",
@@ -49,6 +53,10 @@
     "about_subtitle": "Our philosophy? Zero fees, just good times.",
     "about_p2": "Forget about membership fees. The only thing we ask you to bring is your enthusiasm and a willingness to have fun. Our runs are designed to be accessible to everyone, with routes of about 5 km suitable for any pace. Whether you're a seasoned runner or just lacing up your shoes for the first time, you'll always find someone to share the journey with.",
     "about_p3": "But Run Society doesn't stop at the finish line. The real magic happens afterward: an \"Easy Aperitivo\" to chat, an \"Easy Gelatino\" to cool down, or even an \"Easy Bagnetto\" (a quick swim) in the sea during the summer. Beyond running, our community thrives on WhatsApp, where we organize team-building nights -from bowling to board games- and participate in races and other events together.",
-    "about_p4": "If you're looking for a way to meet new people, explore the city, and be part of something special, you've found the right place. We're waiting for you!"
+    "about_p4": "If you're looking for a way to meet new people, explore the city, and be part of something special, you've found the right place. We're waiting for you!",
+    "cookie_title": "This website uses cookies",
+    "cookie_text": "We only use essential technical cookies to give you the best possible experience.",
+    "cookie_accept": "Accept",
+    "cookie_reject": "Decline"
   }
 }
