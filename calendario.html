@@ -18,54 +18,31 @@
   <script src="js/cookie-consent.js" defer></script>
 </head>
 
-<!-- Incolla questo prima di </body> -->
-
-<!-- Cookie Consent Banner -->
-<div id="cookie-banner"
-     class="fixed bottom-0 left-0 right-0 w-full bg-white/80 backdrop-blur-sm shadow-t-lg p-4 z-50 transform transition-transform duration-500 ease-in-out translate-y-full">
+<body>
+<!-- Banner Cookie -->
+<div id="cookie-banner" class="fixed bottom-0 left-0 right-0 w-full bg-white/80 backdrop-blur-sm shadow-t-lg p-4 z-50 transform transition-transform duration-500 ease-in-out translate-y-full">
   <div class="max-w-screen-lg mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-[#1c110d]">
-
-    <!-- Testo Informativo -->
     <div class="text-center md:text-left">
       <p class="font-bold" data-translate="cookie_title">Informativa sui Cookie</p>
-      <p class="text-sm text-[#9b604b]" data-translate="cookie_text">
-        Utilizziamo cookie essenziali per garantire il corretto funzionamento del sito. Non utilizziamo cookie di tracciamento o di profilazione.
-      </p>
+      <p class="text-sm text-[#9b604b]" data-translate="cookie_text">Utilizziamo cookie essenziali per garantire il corretto funzionamento del sito. Non utilizziamo cookie di tracciamento o di profilazione.</p>
     </div>
-
-    <!-- Pulsanti di Azione -->
     <div class="flex-shrink-0 flex items-center gap-3">
-      <button id="cookie-reject"
-              class="px-5 py-2 text-sm font-bold text-[#1c110d] bg-[#f3eae7] rounded-full hover:bg-gray-200 transition-colors"
-              data-translate="cookie_reject">
-        Rifiuta
-      </button>
-      <button id="cookie-accept"
-              class="px-5 py-2 text-sm font-bold text-white bg-[#f15b24] rounded-full hover:opacity-90 transition-opacity"
-              data-translate="cookie_accept">
-        Accetta
-      </button>
+      <button id="cookie-reject" class="px-5 py-2 text-sm font-bold text-[#1c110d] bg-[#f3eae7] rounded-full hover:bg-gray-200 transition-colors" data-translate="cookie_reject">Rifiuta</button>
+      <button id="cookie-accept" class="px-5 py-2 text-sm font-bold text-white bg-[#f15b24] rounded-full hover:opacity-90 transition-opacity" data-translate="cookie_accept">Accetta</button>
     </div>
   </div>
 </div>
 
-<body>
 <div class="relative flex size-full min-h-screen flex-col bg-[#fcf9f8] group/design-root overflow-x-hidden" style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
   <div class="layout-container flex h-full grow flex-col">
-    <!-- Header responsivo -->
+    <!-- Header -->
     <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f3eae7] px-4 md:px-10 py-3">
       <div class="flex items-center gap-2 md:gap-4 text-[#1c110d]">
         <div class="size-8 md:size-12">
-          <a href="index.html">
-            <img src="icons/logo.svg" alt="Logo Run Society" class="w-8 h-8 md:w-12 md:h-12" />
-          </a>
+          <a href="index.html"><img src="icons/logo.svg" alt="Logo Run Society" class="w-8 h-8 md:w-12 md:h-12" /></a>
         </div>
-        <a href="index.html">
-          <h2 class="text-[#1c110d] text-sm md:text-lg font-bold leading-tight tracking-[-0.015em] hover:text-[#f15b24] transition-colors duration-200">Run Society Trieste</h2>
-        </a>
+        <a href="index.html"><h2 class="text-[#1c110d] text-sm md:text-lg font-bold leading-tight tracking-[-0.015em] hover:text-[#f15b24] transition-colors duration-200">Run Society Trieste</h2></a>
       </div>
-
-      <!-- Menu desktop -->
       <div class="hidden lg:flex flex-1 justify-end gap-8">
         <div class="flex items-center gap-9">
           <a class="text-[#1c110d] text-sm font-medium leading-normal" href="index.html" data-translate="nav_home">Home</a>
@@ -75,12 +52,8 @@
         </div>
         <div class="flex gap-2 items-center">
           <div class="relative">
-            <button id="langMenuButton"
-                    class="flex items-center gap-2 px-3 py-2 bg-[#f3eae7] text-[#1c110d] rounded-full text-sm font-bold"
-            >
-              <div class="text-[#1c110d]" data-icon="Globe" data-size="20px" data-weight="regular">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24ZM101.63,168h52.74C149,186.34,140,202.87,128,215.89,116,202.87,107,186.34,101.63,168ZM98,152a145.72,145.72,0,0,1,0-48h60a145.72,145.72,0,0,1,0,48ZM40,128a87.61,87.61,0,0,1,3.33-24H81.79a161.79,161.79,0,0,0,0,48H43.33A87.61,87.61,0,0,1,40,128ZM154.37,88H101.63C107,69.66,116,53.13,128,40.11,140,53.13,149,69.66,154.37,88Zm19.84,16h38.46a88.15,88.15,0,0,1,0,48H174.21a161.79,161.79,0,0,0,0-48Zm32.16-16H170.94a142.39,142.39,0,0,0-20.26-45A88.37,88.37,0,0,1,206.37,88ZM105.32,43A142.39,142.39,0,0,0,85.06,88H49.63A88.37,88.37,0,0,1,105.32,43ZM49.63,168H85.06a142.39,142.39,0,0,0,20.26,45A88.37,88.37,0,0,1,49.63,168Zm101.05,45a142.39,142.39,0,0,0,20.26-45h35.43A88.37,88.37,0,0,1,150.68,213Z"></path></svg>
-              </div>
+            <button id="langMenuButton" class="flex items-center gap-2 px-3 py-2 bg-[#f3eae7] text-[#1c110d] rounded-full text-sm font-bold">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24ZM101.63,168h52.74C149,186.34,140,202.87,128,215.89,116,202.87,107,186.34,101.63,168ZM98,152a145.72,145.72,0,0,1,0-48h60a145.72,145.72,0,0,1,0,48ZM40,128a87.61,87.61,0,0,1,3.33-24H81.79a161.79,161.79,0,0,0,0,48H43.33A87.61,87.61,0,0,1,40,128ZM154.37,88H101.63C107,69.66,116,53.13,128,40.11,140,53.13,149,69.66,154.37,88Zm19.84,16h38.46a88.15,88.15,0,0,1,0,48H174.21a161.79,161.79,0,0,0,0-48Zm32.16-16H170.94a142.39,142.39,0,0,0-20.26-45A88.37,88.37,0,0,1,206.37,88ZM105.32,43A142.39,142.39,0,0,0,85.06,88H49.63A88.37,88.37,0,0,1,105.32,43ZM49.63,168H85.06a142.39,142.39,0,0,0,20.26,45A88.37,88.37,0,0,1,49.63,168Zm101.05,45a142.39,142.39,0,0,0,20.26-45h35.43A88.37,88.37,0,0,1,150.68,213Z"></path></svg>
               <span>ITA</span>
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
             </button>
@@ -91,8 +64,6 @@
           </div>
         </div>
       </div>
-
-      <!-- Menu mobile -->
       <div class="flex lg:hidden items-center gap-2">
         <div class="relative">
           <button id="langMenuButtonMobile" class="flex items-center gap-1 px-2 py-1 bg-[#f3eae7] text-[#1c110d] rounded-full text-xs font-bold">
@@ -109,15 +80,11 @@
         </button>
       </div>
     </header>
-
-    <!-- Menu mobile overlay -->
     <div id="mobileMenu" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden lg:hidden">
       <div class="fixed right-0 top-0 h-full w-64 bg-[#fcf9f8] shadow-lg">
         <div class="flex justify-between items-center p-4 border-b border-[#f3eae7]">
           <h3 class="text-[#1c110d] font-bold">Menu</h3>
-          <button id="closeMobileMenu" class="p-2 text-[#1c110d]">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
-          </button>
+          <button id="closeMobileMenu" class="p-2 text-[#1c110d]"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg></button>
         </div>
         <nav class="flex flex-col p-4 space-y-4">
           <a class="text-[#1c110d] text-lg font-medium py-2 border-b border-[#f3eae7]" href="index.html" data-translate="nav_home">Home</a>
@@ -129,27 +96,22 @@
     </div>
 
     <!-- Contenuto principale -->
-    <div class="px-4 md:px-8 lg:px-40 flex flex-1 justify-center py-5">
+    <main class="px-4 md:px-8 lg:px-40 flex flex-1 justify-center py-5">
       <div class="layout-content-container flex flex-col w-full max-w-[960px] flex-1">
         <div class="flex justify-center p-4">
           <h1 class="text-[#1c110d] tracking-light text-2xl md:text-[32px] font-bold" data-translate="events_title">Calendario Eventi</h1>
         </div>
-
-        <!-- Contenitore dei calendari (verrà riempito da JS) -->
-        <div id="calendarContainer" class="flex flex-col md:flex-row flex-wrap justify-center gap-8 md:gap-12 lg:gap-16 p-4">
-          <!-- Calendari generati dinamicamente -->
-        </div>
-
-        <!-- Lista degli eventi (verrà riempita da JS) -->
+        <div id="calendarContainer" class="flex flex-col md:flex-row flex-wrap justify-center gap-8 md:gap-12 lg:gap-16 p-4"></div>
         <div id="eventListContainer" class="px-4 mt-8">
           <h2 class="text-[#1c110d] text-xl md:text-[22px] font-bold leading-tight tracking-[-0.015em] pb-3 pt-5" data-translate="upcoming_events">Prossimi Eventi</h2>
-          <!-- Eventi generati dinamicamente -->
+          <div id="event-list-items"></div>
         </div>
       </div>
-    </div>
+    </main>
   </div>
 </div>
 
+<!-- Footer -->
 <!-- Footer -->
 <footer class="flex justify-center mt-auto" style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif; background-color: #fcf9f8;'>
   <div class="flex max-w-[960px] flex-1 flex-col">
@@ -223,17 +185,24 @@
         -->
 
       </div>
-      <p class="text-[#9b604b] text-xs md:text-base font-normal leading-normal">@2024 Run Society. All rights reserved.</p>
+      <p class="text-[#9b604b] text-xs md:text-base font-normal leading-normal" data-translate="rights_reserved">@2024 Run Society. Tutti i diritti riservati.</p>
     </footer>
-  </div>
-</footer>
 
 <script>
-  // Esegui questo codice solo quando l'intera struttura della pagina è pronta
-  document.addEventListener('DOMContentLoaded', function() {
+  // --- FUNZIONE PER SCORRERE FINO A UN EVENTO ---
+  function scrollToEvent(eventId) {
+    const element = document.getElementById(eventId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'center' }); // Modificato in 'center' per una migliore visuale
+      element.classList.add('bg-[#fdf0ec]', 'transition-all', 'duration-500', 'rounded-lg', 'scale-105');
+      setTimeout(() => {
+        element.classList.remove('bg-[#fdf0ec]', 'scale-105');
+      }, 2500); // Rimuove l'highlight dopo 2.5 secondi
+    }
+  }
 
-    // --- SELETTORI DEGLI ELEMENTI ---
-    // Ora siamo sicuri che tutti questi elementi esistono
+  // --- GESTIONE MENU RESPONSIVO ---
+  document.addEventListener('DOMContentLoaded', function() {
     const langBtn = document.getElementById("langMenuButton");
     const langMenu = document.getElementById("langMenu");
     const langBtnMobile = document.getElementById("langMenuButtonMobile");
@@ -242,184 +211,114 @@
     const mobileMenu = document.getElementById("mobileMenu");
     const closeMobileMenuBtn = document.getElementById("closeMobileMenu");
 
-    // --- LISTENER DEGLI EVENTI ---
+    if (langBtn && langMenu) { langBtn.addEventListener("click", (e) => { e.stopPropagation(); langMenu.classList.toggle("hidden"); }); }
+    if (langBtnMobile && langMenuMobile) { langBtnMobile.addEventListener("click", (e) => { e.stopPropagation(); langMenuMobile.classList.toggle("hidden"); }); }
+    if (mobileMenuBtn && mobileMenu) { mobileMenuBtn.addEventListener("click", (e) => { e.stopPropagation(); mobileMenu.classList.remove("hidden"); }); }
+    if (closeMobileMenuBtn && mobileMenu) { closeMobileMenuBtn.addEventListener("click", () => { mobileMenu.classList.add("hidden"); }); }
 
-    // Menu lingua desktop
-    if (langBtn && langMenu) {
-      langBtn.addEventListener("click", (e) => {
-        e.stopPropagation();
-        langMenu.classList.toggle("hidden");
-      });
-    }
-
-    // Menu lingua mobile
-    if (langBtnMobile && langMenuMobile) {
-      langBtnMobile.addEventListener("click", (e) => {
-        e.stopPropagation();
-        langMenuMobile.classList.toggle("hidden");
-      });
-    }
-
-    // Pulsante per APRIRE il menu mobile
-    if (mobileMenuBtn && mobileMenu) {
-      mobileMenuBtn.addEventListener("click", (e) => {
-        e.stopPropagation();
-        mobileMenu.classList.remove("hidden");
-      });
-    }
-
-    // Pulsante per CHIUDERE il menu mobile (la X)
-    if (closeMobileMenuBtn && mobileMenu) {
-      closeMobileMenuBtn.addEventListener("click", () => {
-        mobileMenu.classList.add("hidden");
-      });
-    }
-
-    // Listener globale per CHIUDERE i menu quando si clicca fuori
     document.addEventListener("click", (e) => {
-      // Chiude il menu lingua desktop se il click è esterno
-      if (langMenu && !langMenu.classList.contains('hidden') && !langBtn.contains(e.target)) {
-        langMenu.classList.add("hidden");
-      }
-
-      // Chiude il menu lingua mobile se il click è esterno
-      if (langMenuMobile && !langMenuMobile.classList.contains('hidden') && !langBtnMobile.contains(e.target)) {
-        langMenuMobile.classList.add("hidden");
-      }
-
-      // Chiude il menu mobile principale se il click è sull'overlay (fuori dal pannello)
-      if (mobileMenu && e.target === mobileMenu) {
-        mobileMenu.classList.add('hidden');
-      }
+      if (langMenu && !langMenu.classList.contains('hidden') && !langBtn.contains(e.target)) { langMenu.classList.add("hidden"); }
+      if (langMenuMobile && !langMenuMobile.classList.contains('hidden') && !langBtnMobile.contains(e.target)) { langMenuMobile.classList.add("hidden"); }
+      if (mobileMenu && e.target === mobileMenu) { mobileMenu.classList.add('hidden'); }
     });
 
-    // Chiudi menu mobile quando si ridimensiona la finestra
     window.addEventListener("resize", () => {
-      if (window.innerWidth >= 1024 && mobileMenu && !mobileMenu.classList.contains('hidden')) {
-        mobileMenu.classList.add("hidden");
-      }
+      if (window.innerWidth >= 1024 && mobileMenu && !mobileMenu.classList.contains('hidden')) { mobileMenu.classList.add("hidden"); }
     });
-
   });
 
   // --- LOGICA CALENDARIO ED EVENTI ---
-
-  // 1. CARICAMENTO DEGLI EVENTI DAL FILE JSON
   let events = [];
 
-  // Funzione per caricare gli eventi dal file JSON
   async function loadEvents() {
     try {
-      const response = await fetch('data/events.json');
+      const response = await fetch(`data/events.json?v=${new Date().getTime()}`);
       const data = await response.json();
-      // Converte le date dal formato dd/mm/aaaa a oggetti con day, month (JS), year
       events = data.events.map(event => {
-        const [day, month, year] = event.date.split('/').map(Number);
+        const dateParts = event.date.split('/');
+        const day = parseInt(dateParts[0], 10);
+        const month = parseInt(dateParts[1], 10);
+        const year = parseInt(dateParts[2], 10);
         return {
           ...event,
           day: day,
-          month: month - 1, // Converte a formato JavaScript (0-11)
-          year: year
+          month: month - 1, // Formato JS (0-11)
+          year: year,
+          id: `event-${String(day).padStart(2, '0')}${String(month).padStart(2, '0')}${year}`
         };
       });
-      console.log('Eventi caricati e convertiti:', events);
-
-      // Dopo aver caricato gli eventi, genera il calendario e la lista
       initCalendar();
     } catch (error) {
       console.error('Errore nel caricamento degli eventi:', error);
-      // Se il caricamento fallisce, usa un array vuoto
       events = [];
       initCalendar();
     }
   }
 
-  // 2. FUNZIONE PER GENERARE UN SINGOLO CALENDARIO
   function generateCalendar(month, year) {
     const date = new Date(year, month, 1);
     const daysInMonth = new Date(year, month + 1, 0).getDate();
-    const firstDayIndex = date.getDay(); // 0=Domenica, 1=Lunedì...
-    const weekDays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+    const firstDayIndex = (date.getDay() === 0) ? 6 : date.getDay() - 1; // Lunedì = 0
+    const weekDays = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 
-    let html = `
-      <div class="flex min-w-full sm:min-w-72 max-w-[360px] flex-1 flex-col gap-1">
-        <div class="flex items-center p-1 justify-center">
-          <p class="text-[#1c110d] text-lg font-bold leading-tight text-center capitalize">
-            ${date.toLocaleString("en-US", { month: "long" })} ${year}
-          </p>
-        </div>
-        <div class="grid grid-cols-7 gap-1">
-          ${weekDays.map(d => `<p class="text-[#9b604b] text-sm font-bold flex h-10 items-center justify-center">${d}</p>`).join("")}
-    `;
+    let html = `<div class="flex min-w-full sm:min-w-72 max-w-[360px] flex-1 flex-col gap-1">
+      <div class="flex items-center p-1 justify-center"><p class="text-[#1c110d] text-lg font-bold leading-tight text-center capitalize">${date.toLocaleString("it-IT", { month: "long" })} ${year}</p></div>
+      <div class="grid grid-cols-7 gap-1">${weekDays.map(d => `<p class="text-[#9b604b] text-sm font-bold flex h-10 items-center justify-center">${d}</p>`).join("")}`;
 
-    // Giorni vuoti all'inizio del mese
-    for (let i = 0; i < firstDayIndex; i++) {
-      html += `<div></div>`;
-    }
+    for (let i = 0; i < firstDayIndex; i++) { html += `<div></div>`; }
 
-    // Giorni del mese
     for (let d = 1; d <= daysInMonth; d++) {
       const today = new Date();
       const isToday = d === today.getDate() && month === today.getMonth() && year === today.getFullYear();
       const eventOnThisDay = events.find(e => e.day === d && e.month === month && e.year === year);
 
       let dayClasses = "flex size-full items-center justify-center rounded-full transition-colors duration-200";
-      let tooltip = eventOnThisDay ? `title="${eventOnThisDay.title}"` : '';
+      let buttonTag = eventOnThisDay ? `<button onclick="scrollToEvent('${eventOnThisDay.id}')" class="h-10 w-full text-sm font-medium text-[#1c110d]">` : `<div class="h-10 w-full text-sm font-medium text-[#1c110d]">`;
+      let buttonCloseTag = eventOnThisDay ? `</button>` : `</div>`;
 
-      if (isToday) {
-        dayClasses += " bg-[#f15b24] text-white";
-      } else if (eventOnThisDay) {
-        dayClasses += " bg-[#f3eae7] ring-2 ring-inset ring-[#f15b24] hover:bg-[#f15b24] hover:text-white";
-      } else {
-        dayClasses += " hover:bg-[#f3eae7]";
-      }
+      if (isToday) dayClasses += " bg-[#f15b24] text-white";
+      else if (eventOnThisDay) dayClasses += " bg-[#f3eae7] ring-2 ring-inset ring-[#f15b24] hover:bg-[#f15b24] hover:text-white cursor-pointer";
+      else dayClasses += " text-gray-500";
 
-      html += `
-        <button class="h-10 w-full text-sm font-medium text-[#1c110d]" ${tooltip}>
-          <div class="${dayClasses}">${d}</div>
-        </button>
-      `;
+      html += `${buttonTag}<div class="${dayClasses}">${d}</div>${buttonCloseTag}`;
     }
 
     html += `</div></div>`;
     return html;
   }
 
-  // 3. FUNZIONE PER GENERARE LA LISTA DEGLI EVENTI
   function renderEventList() {
-    const container = document.getElementById("eventListContainer");
+    const container = document.getElementById("event-list-items");
     if (!container) return;
 
-    // Filtra solo gli eventi futuri e ordinali
     const upcomingEvents = events
       .filter(e => new Date(e.year, e.month, e.day) >= new Date().setHours(0,0,0,0))
       .sort((a, b) => new Date(a.year, a.month, a.day) - new Date(b.year, b.month, b.day));
 
     let listHtml = upcomingEvents.map(event => {
       const eventDate = new Date(event.year, event.month, event.day);
-      const dateString = eventDate.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+      const dateString = eventDate.toLocaleDateString('it-IT', { day: 'numeric', month: 'long', year: 'numeric' });
 
       return `
-            <div class="flex flex-col sm:flex-row gap-2 sm:gap-4 border-b border-[#f3eae7] py-4">
-              <div class="shrink-0 text-sm font-medium text-[#1c110d] sm:text-right sm:w-32">${dateString}</div>
-              <div class="flex-1">
-                <p class="text-[#1c110d] text-base font-bold leading-normal">${event.title}</p>
-                <p class="text-[#9b604b] text-sm font-normal leading-normal">${event.description}</p>
-                <p class="text-[#9b604b] text-sm font-normal leading-normal mt-1">${event.time}</p>
-              </div>
-            </div>
-          `;
+        <div id="${event.id}" class="flex flex-col sm:flex-row gap-2 sm:gap-4 border-b border-[#f3eae7] py-4 px-2 -mx-2">
+          <div class="shrink-0 text-sm font-bold text-[#1c110d] sm:text-right sm:w-40">${dateString}</div>
+          <div class="flex-1">
+            <p class="text-[#1c110d] text-base font-bold leading-normal">${event.title}</p>
+            <p class="text-[#9b604b] text-sm font-normal leading-normal mt-1">${event.description}</p>
+            <p class="text-[#9b604b] text-sm font-normal leading-normal mt-1">🕒 ${event.time}</p>
+            <p class="text-[#9b604b] text-sm font-normal leading-normal mt-1">📍 ${event.location}</p>
+          </div>
+        </div>
+      `;
     }).join('');
 
-    // Rimuove il titolo se non ci sono eventi
-    if(upcomingEvents.length > 0) {
-      container.innerHTML += listHtml;
+    if (upcomingEvents.length > 0) {
+      container.innerHTML = listHtml;
     } else {
-      container.innerHTML += '<p class="text-[#9b604b] text-center py-4" data-translate="no_events">Nessun evento in programma. Torna a trovarci presto!</p>';
+      document.getElementById("eventListContainer").innerHTML += '<p class="text-[#9b604b] text-center py-4" data-translate="no_events">Nessun evento in programma. Torna a trovarci presto!</p>';
     }
   }
 
-  // 4. FUNZIONE PRINCIPALE PER RENDERIZZARE LA PAGINA
   function initCalendar() {
     const calendarContainer = document.getElementById("calendarContainer");
     if (!calendarContainer) return;
@@ -430,16 +329,11 @@
     const nextMonth = (thisMonth + 1) % 12;
     const nextYear = thisMonth === 11 ? thisYear + 1 : thisYear;
 
-    // Genera e inserisce i calendari
     calendarContainer.innerHTML = generateCalendar(thisMonth, thisYear) + generateCalendar(nextMonth, nextYear);
-
-    // Genera e inserisce la lista eventi
     renderEventList();
   }
 
-  // Avvia tutto al caricamento della pagina caricando prima gli eventi
   document.addEventListener('DOMContentLoaded', loadEvents);
-
 </script>
 
 </body>
