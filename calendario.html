@@ -16,6 +16,13 @@
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <script src="js/language-switcher.js"></script>
   <script src="js/cookie-consent.js" defer></script>
+  <script src="js/popup.js" defer></script>
+
+  <style>
+    .modal { display: none; }
+    .modal.is-open { display: flex; }
+  </style>
+
 </head>
 
 <body>
@@ -112,7 +119,6 @@
 </div>
 
 <!-- Footer -->
-<!-- Footer -->
 <footer class="flex justify-center mt-auto" style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif; background-color: #fcf9f8;'>
   <div class="flex max-w-[960px] flex-1 flex-col">
     <footer class="flex flex-col gap-4 md:gap-6 px-4 md:px-5 py-6 md:py-10 text-center @container">
@@ -187,22 +193,63 @@
       </div>
       <p class="text-[#9b604b] text-xs md:text-base font-normal leading-normal" data-translate="rights_reserved">@2024 Run Society. Tutti i diritti riservati.</p>
     </footer>
+  </div>
+</footer>
+</div>
+</div>
+
+    <div id="map-modal" class="modal fixed inset-0 bg-black bg-opacity-60 items-center justify-center p-4 z-50">
+      <div id="map-modal-content" class="bg-white rounded-lg shadow-xl w-full max-w-3xl h-full max-h-[80vh] flex flex-col">
+        <div class="flex justify-between items-center p-4 border-b">
+          <h3 id="map-modal-title" class="text-lg font-bold text-[#1c110d]">Mappa</h3>
+          <button id="map-modal-close" class="text-gray-500 hover:text-gray-800">&times;</button>
+        </div>
+        <div class="flex-grow p-1">
+          <iframe
+            id="map-iframe"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade"
+            src="">
+          </iframe>
+        </div>
+      </div>
+    </div>
 
 <script>
+  // 1. OGGETTO DELLE LOCATION PREDEFINITE
+  // Definito globalmente per essere accessibile da popup.js
+  const locations = {
+    piazza_unita: { name: "Piazza Unità d'Italia", url: "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d203.82223922549485!2d13.768026274942061!3d45.649800297912286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDXCsDM4JzU5LjIiTiAxM8KwNDYnMDUuMiJF!5e1!3m2!1sit!2sit!4v1757896201649!5m2!1sit!2sit" },
+    barcola: { name: "Piazzale 11 Settembre, Barcola", url: "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d203.47574982798557!2d13.75063090659199!3d45.68267085763031!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDXCsDQwJzU3LjUiTiAxM8KwNDUnMDIuNCJF!5e1!3m2!1sit!2sit!4v1757895818699!5m2!1sit!2sit" },
+    porto_vecchio: { name: "Ingresso Porto Vecchio", url: "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d203.56918682493196!2d13.770065295522524!3d45.656974363454886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDXCsDM5JzI1LjIiTiAxM8KwNDYnMTEuOSJF!5e1!3m2!1sit!2sit!4v1757896303564!5m2!1sit!2sit" },
+    miramare: { name: "Castello di Miramare", url: "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d203.40250685663273!2d13.712809496572111!3d45.702805844058176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDXCsDQyJzEwLjEiTiAxM8KwNDInNDYuNCJF!5e1!3m2!1sit!2sit!4v1757896354590!5m2!1sit!2sit" },
+    bowling_duino: { name: "Bowling Duino", url: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241.57461436991355!2d13.611185797038747!3d45.775126257188596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477b0c017347f5dd%3A0xff3ad125f45debcf!2sBowling%20Duino!5e1!3m2!1sit!2sit!4v1757896476561!5m2!1sit!2sit" },
+    accademia_biliardo: { name: "Accademia del Biliardo", url: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d203.5782215586281!2d13.781680463441345!3d45.65448908691372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477b6b130c09f671%3A0xffb0eb94eb5b5c8a!2sAccademia%20del%20Biliardo%20Trieste!5e1!3m2!1sit!2sit!4v1757896437090!5m2!1sit!2sit" }
+  };
+  window.locations = locations;
+
   // --- FUNZIONE PER SCORRERE FINO A UN EVENTO ---
+  // Resa globale per essere chiamata da onclick
   function scrollToEvent(eventId) {
     const element = document.getElementById(eventId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'center' }); // Modificato in 'center' per una migliore visuale
+      element.scrollIntoView({ behavior: 'smooth', block: 'center' });
       element.classList.add('bg-[#fdf0ec]', 'transition-all', 'duration-500', 'rounded-lg', 'scale-105');
       setTimeout(() => {
         element.classList.remove('bg-[#fdf0ec]', 'scale-105');
-      }, 2500); // Rimuove l'highlight dopo 2.5 secondi
+      }, 2500);
     }
   }
+  window.scrollToEvent = scrollToEvent;
 
-  // --- GESTIONE MENU RESPONSIVO ---
-  document.addEventListener('DOMContentLoaded', function() {
+  // --- LISTENER PRINCIPALE: ESEGUE TUTTO QUANDO LA PAGINA È PRONTA ---
+  document.addEventListener('DOMContentLoaded', () => {
+
+    // --- LOGICA GESTIONE MENU RESPONSIVO ---
     const langBtn = document.getElementById("langMenuButton");
     const langMenu = document.getElementById("langMenu");
     const langBtnMobile = document.getElementById("langMenuButtonMobile");
@@ -225,115 +272,132 @@
     window.addEventListener("resize", () => {
       if (window.innerWidth >= 1024 && mobileMenu && !mobileMenu.classList.contains('hidden')) { mobileMenu.classList.add("hidden"); }
     });
-  });
 
-  // --- LOGICA CALENDARIO ED EVENTI ---
-  let events = [];
 
-  async function loadEvents() {
-    try {
-      const response = await fetch(`data/events.json?v=${new Date().getTime()}`);
-      const data = await response.json();
-      events = data.events.map(event => {
-        const dateParts = event.date.split('/');
-        const day = parseInt(dateParts[0], 10);
-        const month = parseInt(dateParts[1], 10);
-        const year = parseInt(dateParts[2], 10);
-        return {
-          ...event,
-          day: day,
-          month: month - 1, // Formato JS (0-11)
-          year: year,
-          id: `event-${String(day).padStart(2, '0')}${String(month).padStart(2, '0')}${year}`
-        };
-      });
-      initCalendar();
-    } catch (error) {
-      console.error('Errore nel caricamento degli eventi:', error);
-      events = [];
-      initCalendar();
-    }
-  }
+    // --- LOGICA CALENDARIO ED EVENTI ---
+    let events = [];
 
-  function generateCalendar(month, year) {
-    const date = new Date(year, month, 1);
-    const daysInMonth = new Date(year, month + 1, 0).getDate();
-    const firstDayIndex = (date.getDay() === 0) ? 6 : date.getDay() - 1; // Lunedì = 0
-    const weekDays = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
-
-    let html = `<div class="flex min-w-full sm:min-w-72 max-w-[360px] flex-1 flex-col gap-1">
-      <div class="flex items-center p-1 justify-center"><p class="text-[#1c110d] text-lg font-bold leading-tight text-center capitalize">${date.toLocaleString("it-IT", { month: "long" })} ${year}</p></div>
-      <div class="grid grid-cols-7 gap-1">${weekDays.map(d => `<p class="text-[#9b604b] text-sm font-bold flex h-10 items-center justify-center">${d}</p>`).join("")}`;
-
-    for (let i = 0; i < firstDayIndex; i++) { html += `<div></div>`; }
-
-    for (let d = 1; d <= daysInMonth; d++) {
-      const today = new Date();
-      const isToday = d === today.getDate() && month === today.getMonth() && year === today.getFullYear();
-      const eventOnThisDay = events.find(e => e.day === d && e.month === month && e.year === year);
-
-      let dayClasses = "flex size-full items-center justify-center rounded-full transition-colors duration-200";
-      let buttonTag = eventOnThisDay ? `<button onclick="scrollToEvent('${eventOnThisDay.id}')" class="h-10 w-full text-sm font-medium text-[#1c110d]">` : `<div class="h-10 w-full text-sm font-medium text-[#1c110d]">`;
-      let buttonCloseTag = eventOnThisDay ? `</button>` : `</div>`;
-
-      if (isToday) dayClasses += " bg-[#f15b24] text-white";
-      else if (eventOnThisDay) dayClasses += " bg-[#f3eae7] ring-2 ring-inset ring-[#f15b24] hover:bg-[#f15b24] hover:text-white cursor-pointer";
-      else dayClasses += " text-gray-500";
-
-      html += `${buttonTag}<div class="${dayClasses}">${d}</div>${buttonCloseTag}`;
+    async function loadEvents() {
+      try {
+        const response = await fetch(`data/events.json?v=${new Date().getTime()}`);
+        const data = await response.json();
+        events = data.events.map(event => {
+          const dateParts = event.date.split('/');
+          const day = parseInt(dateParts[0], 10);
+          const month = parseInt(dateParts[1], 10);
+          const year = parseInt(dateParts[2], 10);
+          return { ...event, day, month: month - 1, year, id: `event-${String(day).padStart(2, '0')}${String(month).padStart(2, '0')}${year}` };
+        });
+        initCalendar();
+      } catch (error) {
+        console.error('Errore nel caricamento degli eventi:', error);
+        events = [];
+        initCalendar();
+      }
     }
 
-    html += `</div></div>`;
-    return html;
-  }
+    function generateCalendar(month, year) {
+      const date = new Date(year, month, 1);
+      const daysInMonth = new Date(year, month + 1, 0).getDate();
+      const firstDayIndex = (date.getDay() === 0) ? 6 : date.getDay() - 1;
+      const weekDays = ["Lun", "Mar", "Mer", "Gio", "Ven", "Sab", "Dom"];
 
-  function renderEventList() {
-    const container = document.getElementById("event-list-items");
-    if (!container) return;
+      let html = `<div class="flex min-w-full sm:min-w-72 max-w-[360px] flex-1 flex-col gap-1">
+            <div class="flex items-center p-1 justify-center"><p class="text-[#1c110d] text-lg font-bold leading-tight text-center capitalize">${date.toLocaleString("it-IT", { month: "long" })} ${year}</p></div>
+            <div class="grid grid-cols-7 gap-1">${weekDays.map(d => `<p class="text-[#9b604b] text-sm font-bold flex h-10 items-center justify-center">${d}</p>`).join("")}`;
 
-    const upcomingEvents = events
-      .filter(e => new Date(e.year, e.month, e.day) >= new Date().setHours(0,0,0,0))
-      .sort((a, b) => new Date(a.year, a.month, a.day) - new Date(b.year, b.month, b.day));
+      for (let i = 0; i < firstDayIndex; i++) { html += `<div></div>`; }
 
-    let listHtml = upcomingEvents.map(event => {
-      const eventDate = new Date(event.year, event.month, event.day);
-      const dateString = eventDate.toLocaleDateString('it-IT', { day: 'numeric', month: 'long', year: 'numeric' });
+      for (let d = 1; d <= daysInMonth; d++) {
+        const today = new Date();
+        const isToday = d === today.getDate() && month === today.getMonth() && year === today.getFullYear();
+        const eventOnThisDay = events.find(e => e.day === d && e.month === month && e.year === year);
 
-      return `
-        <div id="${event.id}" class="flex flex-col sm:flex-row gap-2 sm:gap-4 border-b border-[#f3eae7] py-4 px-2 -mx-2">
-          <div class="shrink-0 text-sm font-bold text-[#1c110d] sm:text-right sm:w-40">${dateString}</div>
-          <div class="flex-1">
-            <p class="text-[#1c110d] text-base font-bold leading-normal">${event.title}</p>
-            <p class="text-[#9b604b] text-sm font-normal leading-normal mt-1">${event.description}</p>
-            <p class="text-[#9b604b] text-sm font-normal leading-normal mt-1">🕒 ${event.time}</p>
-            <p class="text-[#9b604b] text-sm font-normal leading-normal mt-1">📍 ${event.location}</p>
+        let dayClasses = "flex size-full items-center justify-center rounded-full transition-colors duration-200 h-10 w-full text-sm font-medium text-[#1c110d]";
+
+        if (isToday) dayClasses += " bg-[#f15b24] text-white";
+        else if (eventOnThisDay) dayClasses += " bg-[#f3eae7] ring-2 ring-inset ring-[#f15b24] hover:bg-[#f15b24] hover:text-white cursor-pointer";
+        else dayClasses += " text-gray-500";
+
+        if (eventOnThisDay) html += `<button onclick="scrollToEvent('${eventOnThisDay.id}')" class="${dayClasses}">${d}</button>`;
+        else html += `<div class="${dayClasses}">${d}</div>`;
+      }
+      html += `</div></div>`;
+      return html;
+    }
+
+    function renderEventList() {
+      const container = document.getElementById("event-list-items");
+      if (!container) return;
+
+      const upcomingEvents = events.filter(e => new Date(e.year, e.month, e.day) >= new Date().setHours(0,0,0,0)).sort((a, b) => new Date(a.year, a.month, a.day) - new Date(b.year, b.month, b.day));
+
+      let listHtml = upcomingEvents.map(event => {
+        const eventDate = new Date(event.year, event.month, event.day);
+        const dateString = eventDate.toLocaleDateString('it-IT', { day: 'numeric', month: 'long', year: 'numeric' });
+
+        let locationName, mapButtonHtml;
+
+        // Logica per determinare il nome della location e se mostrare il pulsante
+        if (typeof event.location === 'string' && locations[event.location]) {
+          const locationData = locations[event.location];
+          locationName = locationData.name;
+          mapButtonHtml = `<button onclick="openMapModal('${event.location}')" class="p-2 rounded-full text-[#9b604b] hover:bg-orange-100 hover:text-[#f15b24] transition-colors"><svg fill="currentColor" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 32" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="32" height="32"><g><g><g><path d="M16 14.185a4.738 4.738 0 0 0 4.733 -4.734c0 -2.61 -2.122 -4.733 -4.733 -4.733s-4.733 2.122 -4.733 4.731A4.739 4.739 0 0 0 16 14.185m0 -6.814a2.083 2.083 0 0 1 0 4.162 2.083 2.083 0 0 1 0 -4.162"/><path d="M29.566 12.173a1.326 1.326 0 0 0 -1.326 -1.326h-2.99C26.211 4.813 21.539 0 16 0 10.502 0 5.779 4.771 6.749 10.846H3.76a1.326 1.326 0 0 0 -1.326 1.326v18.502c0 0.733 0.594 1.326 1.326 1.326h24.48c0.711 0 1.326 -0.578 1.326 -1.326zm-5.063 1.337 0.002 -0.003 0.003 -0.007h2.407v6.583h-5.462c1.059 -2.006 2.256 -4.438 3.049 -6.573M16 2.65c4.23 0 7.998 3.952 6.307 9.107 -1.219 3.715 -4.31 9.246 -6.307 12.61 -1.993 -3.354 -5.088 -8.896 -6.307 -12.61C7.998 6.59 11.782 2.653 16 2.653M9.961 29.347H5.086V13.498h2.407c0.39 1.072 1.187 2.95 2.466 5.454zm2.653 0v-5.523a131.429 131.429 0 0 0 2.263 3.806 1.328 1.328 0 0 0 2.249 0c0.013 -0.019 1.059 -1.698 2.39 -4.026l5.586 5.744zm14.302 -1.939 -4.547 -4.675h4.547z"/></g></g></g></svg></button>`;
+        } else if (typeof event.location === 'object' && event.location.name && event.location.url) {
+          locationName = event.location.name;
+          mapButtonHtml = `<button onclick="openMapModal(null, '${event.location.url}')" class="p-2 rounded-full text-[#9b604b] hover:bg-orange-100 hover:text-[#f15b24] transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 16 16"><path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/></svg></button>`;
+        } else {
+          locationName = event.location || 'N/D';
+          // Placeholder invisibile per mantenere l'allineamento perfetto
+          mapButtonHtml = '<div class="w-[44px] h-[44px] flex-shrink-0"></div>';
+        }
+
+        // NUOVA STRUTTURA HTML PER OGNI EVENTO
+        return `
+          <div id="${event.id}" class="flex flex-row items-center gap-4 border-b border-[#f3eae7] py-4 px-2 -mx-2">
+
+            <!-- Colonna 1: Data -->
+            <div class="shrink-0 text-sm font-bold text-[#1c110d] text-right w-24 sm:w-40">${dateString}</div>
+
+            <!-- Colonna 2: Dettagli Evento (cresce per riempire lo spazio) -->
+            <div class="flex-1">
+              <p class="text-[#1c110d] text-base font-bold leading-normal">${event.title}</p>
+              <p class="text-[#9b604b] text-sm font-normal leading-normal mt-1">${event.description}</p>
+              <p class="text-[#9b604b] text-sm font-normal leading-normal mt-1">🕒 ${event.time}</p>
+              <p class="text-[#9b604b] text-sm font-normal leading-normal mt-1">📍 ${locationName}</p>
+            </div>
+
+            <!-- Colonna 3: Icona Mappa (dimensione fissa) -->
+            <div class="flex-shrink-0">
+              ${mapButtonHtml}
+            </div>
+
           </div>
-        </div>
-      `;
-    }).join('');
+        `;
+      }).join('');
 
-    if (upcomingEvents.length > 0) {
-      container.innerHTML = listHtml;
-    } else {
-      document.getElementById("eventListContainer").innerHTML += '<p class="text-[#9b604b] text-center py-4" data-translate="no_events">Nessun evento in programma. Torna a trovarci presto!</p>';
+      if (upcomingEvents.length > 0) {
+        container.innerHTML = listHtml;
+      } else {
+        document.getElementById("eventListContainer").innerHTML = '<p class="text-[#9b604b] text-center py-4" data-translate="no_events">Nessun evento in programma. Torna a trovarci presto!</p>';
+      }
     }
-  }
 
-  function initCalendar() {
-    const calendarContainer = document.getElementById("calendarContainer");
-    if (!calendarContainer) return;
+    function initCalendar() {
+      const calendarContainer = document.getElementById("calendarContainer");
+      if (!calendarContainer) return;
+      const today = new Date();
+      const thisMonth = today.getMonth();
+      const thisYear = today.getFullYear();
+      const nextMonth = (thisMonth + 1) % 12;
+      const nextYear = thisMonth === 11 ? thisYear + 1 : thisYear;
+      calendarContainer.innerHTML = generateCalendar(thisMonth, thisYear) + generateCalendar(nextMonth, nextYear);
+      renderEventList();
+    }
 
-    const today = new Date();
-    const thisMonth = today.getMonth();
-    const thisYear = today.getFullYear();
-    const nextMonth = (thisMonth + 1) % 12;
-    const nextYear = thisMonth === 11 ? thisYear + 1 : thisYear;
-
-    calendarContainer.innerHTML = generateCalendar(thisMonth, thisYear) + generateCalendar(nextMonth, nextYear);
-    renderEventList();
-  }
-
-  document.addEventListener('DOMContentLoaded', loadEvents);
+    // Avvia tutto!
+    loadEvents();
+  });
 </script>
 
 </body>

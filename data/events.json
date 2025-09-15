@@ -5,28 +5,28 @@
       "title": "Weekly Easy Run",
       "description": "Join us for a relaxed run through the city center. All paces welcome!",
       "time": "Meeting: 6:30 PM, Start: 7:00 PM",
-      "location": "Piazza Unità d'Italia"
+      "location": "piazza_unita"
     },
     {
       "date": "16/10/2025",
       "title": "Weekly Easy Run",
       "description": "Join us for a relaxed run through the city center. All paces welcome!",
       "time": "Meeting: 6:30 PM, Start: 7:00 PM",
-      "location": "Piazza Unità d'Italia"
+      "location": "piazza_unita"
     },
     {
       "date": "23/10/2025",
       "title": "Weekly Easy Run",
       "description": "Join us for a relaxed run through the city center. All paces welcome!",
       "time": "Meeting: 6:30 PM, Start: 7:00 PM",
-      "location": "Piazza Unità d'Italia"
+      "location": "piazza_unita"
     },
     {
       "date": "30/10/2025",
       "title": "Weekly Easy Run",
       "description": "Join us for a relaxed run through the city center. All paces welcome!",
       "time": "Meeting: 6:30 PM, Start: 7:00 PM",
-      "location": "Piazza Unità d'Italia"
+      "location": "piazza_unita"
     },
     {
       "date": "11/09/2025",
@@ -40,7 +40,7 @@
       "title": "Easy Run Easy Gelatino",
       "description": "La corsa che ti permette di smaltire le calorie per potersi permettere un gelato è tornata!",
       "time": "Meeting: 18:30, Start: 19:00",
-      "location": "Piazza Hortis"
+      "location": "barcola"
     },
     {
       "date": "13/9/2025",
@@ -54,14 +54,14 @@
       "title": "Corsa dei Castelli",
       "description": "La Corsa dei Castelli è tornata. Vieni con noi a scoprire la 10k più bella di sempre, da Miramare a San Giusto vedrai il meglio di Trieste!",
       "time": "Meeting: 8:30, Start: 9:00",
-      "location": "Castello di Miramare"
+      "location": "miramare"
     },
     {
       "date": "25/9/2025",
       "title": "Weekly Run",
       "description": "Weekly run",
       "time": "Meeting: 18:30, Start: 19:00",
-      "location": "Piazza Unità d'Italia"
+      "location": "porto_vecchio"
     }
   ]
 }
