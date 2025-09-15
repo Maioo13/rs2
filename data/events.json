@@ -65,6 +65,13 @@
       "description": "Chi ha detto che un aperitivo non fa bene? Noi lo consideriamo un 'reintegro dei sali minerali', ovviamente dopo una corsetrta di 5km. Ci sarai?",
       "time": "Meeting: 18:30, Start: 19:00",
       "location": "porto_vecchio"
+    },
+    {
+      "date": "30/10/2025",
+      "title": "Easy Run Easy Aperitivo",
+      "description": "Insegui con noi la voglia di correre e magari...nel frattempo ci fermiamo in un bar a fare aperitivo!",
+      "time": "Meeting: 18:45, Start: 19:00",
+      "location": "porto_vecchio"
     }
   ]
 }
