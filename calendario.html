@@ -337,41 +337,34 @@
         const dateString = eventDate.toLocaleDateString('it-IT', { day: 'numeric', month: 'long', year: 'numeric' });
 
         let locationName, mapButtonHtml;
+        const mapIconSvg = `<svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 32 32" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="32" height="32"><g><g><g><path d="M16 14.185c2.61 0 4.733 -2.123 4.733 -4.733 0 -2.61 -2.123 -4.733 -4.733 -4.733s-4.733 2.123 -4.733 4.733c0 2.61 2.123 4.733 4.733 4.733m0 -6.814c1.147 0 2.081 0.933 2.081 2.081 0 1.148 -0.934 2.082 -2.081 2.082s-2.081 -0.934 -2.081 -2.082c0 -1.147 0.933 -2.081 2.081 -2.081"/><path d="M29.566 12.172c0 -0.732 -0.594 -1.326 -1.326 -1.326h-2.989C26.212 4.813 21.54 0 16 0 10.501 0 5.779 4.772 6.749 10.846H3.76c-0.732 0 -1.326 0.594 -1.326 1.326v18.502c0 0.732 0.594 1.326 1.326 1.326h24.48c0.712 0 1.326 -0.577 1.326 -1.326 0 -0.824 0 -17.683 0 -18.502m-5.064 1.338 0.002 -0.004 0.003 -0.008h2.407v6.584h-5.461c1.06 -2.005 2.255 -4.437 3.05 -6.572M16 2.652c4.229 0 7.998 3.952 6.307 9.107 -1.219 3.715 -4.309 9.246 -6.307 12.61 -1.992 -3.355 -5.088 -8.896 -6.307 -12.61 -1.695 -5.168 2.088 -9.107 6.307 -9.107M9.96 29.348H5.086V13.498h2.407c0.39 1.073 1.187 2.949 2.467 5.454zm2.652 0v-5.523c1.269 2.214 2.251 3.787 2.264 3.807 0.519 0.83 1.73 0.829 2.248 0 0.013 -0.02 1.06 -1.698 2.39 -4.027l5.586 5.744zm14.302 -1.939 -4.547 -4.675h4.547z"/></g></g></g></svg>`;
 
-        // Logica per determinare il nome della location e se mostrare il pulsante
         if (typeof event.location === 'string' && locations[event.location]) {
           const locationData = locations[event.location];
           locationName = locationData.name;
-          mapButtonHtml = `<button onclick="openMapModal('${event.location}')" class="p-2 rounded-full text-[#9b604b] hover:bg-orange-100 hover:text-[#f15b24] transition-colors"><svg fill="currentColor" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 32" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="32" height="32"><g><g><g><path d="M16 14.185a4.738 4.738 0 0 0 4.733 -4.734c0 -2.61 -2.122 -4.733 -4.733 -4.733s-4.733 2.122 -4.733 4.731A4.739 4.739 0 0 0 16 14.185m0 -6.814a2.083 2.083 0 0 1 0 4.162 2.083 2.083 0 0 1 0 -4.162"/><path d="M29.566 12.173a1.326 1.326 0 0 0 -1.326 -1.326h-2.99C26.211 4.813 21.539 0 16 0 10.502 0 5.779 4.771 6.749 10.846H3.76a1.326 1.326 0 0 0 -1.326 1.326v18.502c0 0.733 0.594 1.326 1.326 1.326h24.48c0.711 0 1.326 -0.578 1.326 -1.326zm-5.063 1.337 0.002 -0.003 0.003 -0.007h2.407v6.583h-5.462c1.059 -2.006 2.256 -4.438 3.049 -6.573M16 2.65c4.23 0 7.998 3.952 6.307 9.107 -1.219 3.715 -4.31 9.246 -6.307 12.61 -1.993 -3.354 -5.088 -8.896 -6.307 -12.61C7.998 6.59 11.782 2.653 16 2.653M9.961 29.347H5.086V13.498h2.407c0.39 1.072 1.187 2.95 2.466 5.454zm2.653 0v-5.523a131.429 131.429 0 0 0 2.263 3.806 1.328 1.328 0 0 0 2.249 0c0.013 -0.019 1.059 -1.698 2.39 -4.026l5.586 5.744zm14.302 -1.939 -4.547 -4.675h4.547z"/></g></g></g></svg></button>`;
+          // Chiama openMapModal con la chiave della location
+          mapButtonHtml = `<button onclick="openMapModal('${event.location}')" class="p-2 rounded-full text-[#9b604b] hover:bg-orange-100 hover:text-[#f15b24] transition-colors">${mapIconSvg}</button>`;
         } else if (typeof event.location === 'object' && event.location.name && event.location.url) {
           locationName = event.location.name;
-          mapButtonHtml = `<button onclick="openMapModal(null, '${event.location.url}')" class="p-2 rounded-full text-[#9b604b] hover:bg-orange-100 hover:text-[#f15b24] transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 16 16"><path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/></svg></button>`;
+          // Chiama openMapModal con l'URL e il NOME personalizzati
+          mapButtonHtml = `<button onclick="openMapModal(null, '${event.location.url}', '${event.location.name}')" class="p-2 rounded-full text-[#9b604b] hover:bg-orange-100 hover:text-[#f15b24] transition-colors">${mapIconSvg}</button>`;
         } else {
           locationName = event.location || 'N/D';
-          // Placeholder invisibile per mantenere l'allineamento perfetto
           mapButtonHtml = '<div class="w-[44px] h-[44px] flex-shrink-0"></div>';
         }
 
-        // NUOVA STRUTTURA HTML PER OGNI EVENTO
         return `
           <div id="${event.id}" class="flex flex-row items-center gap-4 border-b border-[#f3eae7] py-4 px-2 -mx-2">
-
-            <!-- Colonna 1: Data -->
             <div class="shrink-0 text-sm font-bold text-[#1c110d] text-right w-24 sm:w-40">${dateString}</div>
-
-            <!-- Colonna 2: Dettagli Evento (cresce per riempire lo spazio) -->
             <div class="flex-1">
               <p class="text-[#1c110d] text-base font-bold leading-normal">${event.title}</p>
               <p class="text-[#9b604b] text-sm font-normal leading-normal mt-1">${event.description}</p>
               <p class="text-[#9b604b] text-sm font-normal leading-normal mt-1">🕒 ${event.time}</p>
               <p class="text-[#9b604b] text-sm font-normal leading-normal mt-1">📍 ${locationName}</p>
             </div>
-
-            <!-- Colonna 3: Icona Mappa (dimensione fissa) -->
             <div class="flex-shrink-0">
               ${mapButtonHtml}
             </div>
-
           </div>
         `;
       }).join('');
