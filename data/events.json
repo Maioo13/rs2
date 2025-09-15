@@ -3,21 +3,21 @@
     {
       "date": "18/09/2025",
       "title": "Easy Run Easy Gelatino",
-      "description": "La easy run che prima ti fa correre e poi...sorridere con un bel gelatino è tornata!",
+      "description": "La easy run che prima ti fa correre e poi...sorridere con un bel gelatino \u00e8 tornata!",
       "time": "Meeting: 18:45, Start 19:00",
       "location": "porto_vecchio"
     },
     {
       "date": "21/09/2025",
       "title": "Rampigada Santa",
-      "description": "Unica ed inimitabile, la Rampigada Santa è l'evento che non ti aspetti. 2km al 17% di pendenza, riuscirai a sconfiggere la salita?",
+      "description": "Unica ed inimitabile, la Rampigada Santa \u00e8 l'evento che non ti aspetti. 2km al 17% di pendenza, riuscirai a sconfiggere la salita?",
       "time": "Meeting: 9:00, Start: From 9:30",
       "location": "scala_santa"
     },
     {
       "date": "25/09/2025",
       "title": "Easy Run Easy Gelatino",
-      "description": "Corsetta e gelatino finale, cosa c'è di meglio? Secondo noi...nulla! Quindi, cosa aspetti a venire con noi?!",
+      "description": "Corsetta e gelatino finale, cosa c'\u00e8 di meglio? Secondo noi...nulla! Quindi, cosa aspetti a venire con noi?!",
       "time": "Meeting: 18:45, Start 19:00",
       "location": "porto_vecchio"
     },
@@ -45,7 +45,7 @@
     {
       "date": "19/10/2025",
       "title": "Corsa dei Castelli",
-      "description": "La Corsa dei Castelli è tornata. Vieni con noi a scoprire la 10k più bella di sempre, da Miramare a San Giusto vedrai il meglio di Trieste!",
+      "description": "La Corsa dei Castelli \u00e8 tornata. Vieni con noi a scoprire la 10k pi\u00f9 bella di sempre, da Miramare a San Giusto vedrai il meglio di Trieste!",
       "time": "Meeting: 9:00, Start: 10:00",
       "location": "miramare"
     },
@@ -55,6 +55,16 @@
       "description": "Dopo le corse di domenica, una 'Easy run' fa bene per non lasciare le gambe ferme ma neanche troppo in movimento!",
       "time": "Meeting: 18:30, Start: 19:00",
       "location": "porto_vecchio"
+    },
+    {
+      "date": "19/10/2025",
+      "title": "Lubjana Marathon/Lubjana Half Marathon/Garmin 10k",
+      "description": "Corri con noi la Lubjana Marathon, immergiti nelle bellezze della Capitale slovena per una corsa fantastica, all'insegna dei PR!",
+      "time": "Meeting: 7:00, Start: 8:00 (per la 10k, 9:00 per la serie 'Lubjana Marathon')",
+      "location": {
+        "name": "Lubjana",
+        "url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d692.1075754816442!2d14.507869901969972!3d46.062460512466764!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47653299e9eb17a9%3A0xacb63b0695b827c6!2sDunajska%20c.%2018-20!5e0!3m2!1sit!2sit!4v1757930925265!5m2!1sit!2sit"
+      }
     }
   ]
 }
