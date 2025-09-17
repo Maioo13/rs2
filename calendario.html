@@ -276,11 +276,37 @@
 
 
     // --- LOGICA CALENDARIO ED EVENTI ---
+    async function loadEvents() {
+      try {
+        // Usiamo il percorso assoluto (con lo slash iniziale) per massima robustezza
+        const response = await fetch(`/data/events.json?v=${new Date().getTime()}`);
+        if (!response.ok) {
+          throw new Error(`Errore nel caricamento del file: ${response.statusText}`);
+        }
+        const data = await response.json();
+        events = data.events.map(event => {
+          const dateParts = event.date.split('/');
+          const day = parseInt(dateParts[0], 10);
+          const month = parseInt(dateParts[1], 10);
+          const year = parseInt(dateParts[2], 10);
+          return { ...event, day, month: month - 1, year, id: `event-${String(day).padStart(2, '0')}${String(month).padStart(2, '0')}${year}` };
+        });
+        initCalendar();
+      } catch (error) {
+        console.error('Errore Dettagliato:', error);
+        const container = document.getElementById("event-list-items");
+        if(container) container.innerHTML = `<p class="text-red-600 text-center py-4">Oops! Non è stato possibile caricare gli eventi. Potrebbe esserci un errore nel file 'events.json'.</p>`;
+        events = [];
+      }
+    }
+
+    /*
+
     let events = [];
 
     async function loadEvents() {
       try {
-        const response = await fetch(`data/events.json?v=${new Date().getTime()}`);
+        const response = await fetch(`/data/events.json?v=${new Date().getTime()}`);
         const data = await response.json();
         events = data.events.map(event => {
           const dateParts = event.date.split('/');
@@ -296,6 +322,8 @@
         initCalendar();
       }
     }
+
+     */
 
     function generateCalendar(month, year) {
       const date = new Date(year, month, 1);
