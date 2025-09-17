@@ -53,6 +53,13 @@
       "title": "Weekly Run",
       "description": "Weekly run",
       "time": "Meeting: 18:30, Start: 19:00"
+    },
+    {
+      "date": "3/10/2025",
+      "title": "Prova",
+      "description": "Proba",
+      "time": "Prova",
+      "location": "porto_vecchio"
     }
   ]
 }
