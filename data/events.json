@@ -1,63 +1,65 @@
 {
   "events": [
     {
-      "date": "02/10/2025",
-      "title": "Weekly Easy Run",
-      "description": "Join us for a relaxed run through the city center. All paces welcome!",
-      "time": "Meeting: 6:30 PM, Start: 7:00 PM"
+      "date": "18/09/2025",
+      "title": "Easy Run Easy Gelatino",
+      "description": "La easy run che prima ti fa correre e poi...sorridere con un bel gelatino è tornata!",
+      "time": "Meeting: 18:45, Start 19:00",
+      "location": "porto_vecchio"
+    },
+    {
+      "date": "21/09/2025",
+      "title": "Rampigada Santa",
+      "description": "Unica ed inimitabile, la Rampigada Santa è l'evento che non ti aspetti. 2km al 17% di pendenza, riuscirai a sconfiggere la salita?",
+      "time": "Meeting: 9:00, Start: From 9:30",
+      "location": "scala_santa"
+    },
+    {
+      "date": "25/09/2025",
+      "title": "Easy Run Easy Gelatino",
+      "description": "Corsetta e gelatino finale, cosa c'è di meglio? Secondo noi...nulla! Quindi, cosa aspetti a venire con noi?!",
+      "time": "Meeting: 18:45, Start 19:00",
+      "location": "porto_vecchio"
+    },
+    {
+      "date": "2/10/2025",
+      "title": "Easy International Run",
+      "description": "Join us for a relaxed run through the city center and then...a very good icecream from 'Oggi Gelato' will wait for us at the end!",
+      "time": "Meeting: 18:45, Start 19:00",
+      "location": "porto_vecchio"
+    },
+    {
+      "date": "9/10/2025",
+      "title": "Easy Run Easy Aperitivo",
+      "description": "L'evento che tutti si meritano, la vera 'Easy Run' sta tornando...pronti per un aperitivo tutti assieme alla fine?",
+      "time": "Meeting: 18:45, Start: 19:00",
+      "location": "porto_vecchio"
     },
     {
       "date": "16/10/2025",
-      "title": "Weekly Easy Run",
-      "description": "Join us for a relaxed run through the city center. All paces welcome!",
-      "time": "Meeting: 6:30 PM, Start: 7:00 PM"
-    },
-    {
-      "date": "23/10/2025",
-      "title": "Weekly Easy Run",
-      "description": "Join us for a relaxed run through the city center. All paces welcome!",
-      "time": "Meeting: 6:30 PM, Start: 7:00 PM"
-    },
-    {
-      "date": "30/10/2025",
-      "title": "Weekly Easy Run",
-      "description": "Join us for a relaxed run through the city center. All paces welcome!",
-      "time": "Meeting: 6:30 PM, Start: 7:00 PM"
-    },
-    {
-      "date": "11/09/2025",
-      "title": "EASY RUN, EASY BAGNETTO",
-      "description": "Ci vediamo a barcola per i solito 5k che correremo assieme e poi un bel tuffo in acqua",
-      "time": "Meeting: 18:45, Start: 19:00"
-    },
-    {
-      "date": "18/09/2025",
-      "title": "Easy Run Easy Gelatino",
-      "description": "La corsa che ti permette di smaltire le calorie per potersi permettere un gelato \u00e8 tornata!",
-      "time": "Meeting: 18:30, Start: 19:00"
-    },
-    {
-      "date": "13/9/2025",
-      "title": "Fluo Run",
-      "description": "Preparati a correre alla Fluo Run, la corsa-evento di \"Let's Move Trieste\"",
-      "time": "Meeting: 20:00, Start: 20:30"
+      "title": "Easy Run Easy Aperitivo",
+      "description": "Chi ha detto che un aperitivo non fa bene? Noi lo consideriamo un 'reintegro dei sali minerali', ovviamente dopo una corsetrta di 5km. Ci sarai?",
+      "time": "Meeting: 18:30, Start: 19:00",
+      "location": "barcola"
     },
     {
       "date": "19/10/2025",
       "title": "Corsa dei Castelli",
-      "description": "La Corsa dei Castelli \u00e8 tornata. Vieni con noi a scoprire la 10k pi\u00f9 bella di sempre, da Miramare a San Giusto vedrai il meglio di Trieste!",
-      "time": "Meeting: 8:30, Start: 9:00"
+      "description": "La Corsa dei Castelli è tornata. Vieni con noi a scoprire la 10k più bella di sempre, da Miramare a San Giusto vedrai il meglio di Trieste!",
+      "time": "Meeting: 9:00, Start: 10:00",
+      "location": "miramare",
     },
     {
-      "date": "25/9/2025",
-      "title": "Weekly Run",
-      "description": "Weekly run",
-      "time": "Meeting: 18:30, Start: 19:00"
+      "date": "23/10/2025",
+      "title": "Easy Run Easy Aperitivo",
+      "description": "Dopo le corse di domenica, una 'Easy run' fa bene per non lasciare le gambe ferme ma neanche troppo in movimento!",
+      "time": "Meeting: 18:30, Start: 19:00",
+      "location": "porto_vecchio"
     },
     {
-      "date": "3/10/2025",
+      "date": "4/10/2025",
       "title": "Prova",
-      "description": "Proba",
+      "description": "Prova",
       "time": "Prova",
       "location": "porto_vecchio"
     }
