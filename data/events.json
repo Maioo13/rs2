@@ -3,21 +3,21 @@
     {
       "date": "18/09/2025",
       "title": "Easy Run Easy Gelatino",
-      "description": "La easy run che prima ti fa correre e poi...sorridere con un bel gelatino è tornata!",
+      "description": "La easy run che prima ti fa correre e poi...sorridere con un bel gelatino \u00e8 tornata!",
       "time": "Meeting: 18:45, Start 19:00",
       "location": "porto_vecchio"
     },
     {
       "date": "21/09/2025",
       "title": "Rampigada Santa",
-      "description": "Unica ed inimitabile, la Rampigada Santa è l'evento che non ti aspetti. 2km al 17% di pendenza, riuscirai a sconfiggere la salita?",
+      "description": "Unica ed inimitabile, la Rampigada Santa \u00e8 l'evento che non ti aspetti. 2km al 17% di pendenza, riuscirai a sconfiggere la salita?",
       "time": "Meeting: 9:00, Start: From 9:30",
       "location": "scala_santa"
     },
     {
       "date": "25/09/2025",
       "title": "Easy Run Easy Gelatino",
-      "description": "Corsetta e gelatino finale, cosa c'è di meglio? Secondo noi...nulla! Quindi, cosa aspetti a venire con noi?!",
+      "description": "Corsetta e gelatino finale, cosa c'\u00e8 di meglio? Secondo noi...nulla! Quindi, cosa aspetti a venire con noi?!",
       "time": "Meeting: 18:45, Start 19:00",
       "location": "porto_vecchio"
     },
@@ -45,7 +45,7 @@
     {
       "date": "19/10/2025",
       "title": "Corsa dei Castelli",
-      "description": "La Corsa dei Castelli è tornata. Vieni con noi a scoprire la 10k più bella di sempre, da Miramare a San Giusto vedrai il meglio di Trieste!",
+      "description": "La Corsa dei Castelli \u00e8 tornata. Vieni con noi a scoprire la 10k pi\u00f9 bella di sempre, da Miramare a San Giusto vedrai il meglio di Trieste!",
       "time": "Meeting: 9:00, Start: 10:00",
       "location": "miramare"
     },
@@ -54,13 +54,6 @@
       "title": "Easy Run Easy Aperitivo",
       "description": "Dopo le corse di domenica, una 'Easy run' fa bene per non lasciare le gambe ferme ma neanche troppo in movimento!",
       "time": "Meeting: 18:30, Start: 19:00",
-      "location": "porto_vecchio"
-    },
-    {
-      "date": "4/10/2025",
-      "title": "Prova",
-      "description": "Prova",
-      "time": "Prova",
       "location": "porto_vecchio"
     }
   ]
