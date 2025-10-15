@@ -72,6 +72,62 @@
       "description": "Torna la corsa all'alba per i mattinieri! Svegliatevi presto, allacciate le scarpe e...via!\n5km per poi gustarsi una buona colazione!",
       "time": "Meeting: 5:45, Start: 6:00",
       "location": "porto_vecchio"
+    },
+    {
+      "date": "27/11/2025",
+      "title": "Easy Run Easy Aperitivo",
+      "description": "L'evento che tutti si meritano, la vera 'Easy Run' sta tornando...pronti per un aperitivo tutti assieme alla fine?",
+      "time": "Meeting: 18:45, Start: 19:00",
+      "location": "porto_vecchio"
+    },
+    {
+      "date": "4/12/2025",
+      "title": "Easy Run Easy Aperitivo",
+      "description": "Chi ha detto che un aperitivo non fa bene? Noi lo consideriamo un 'reintegro dei sali minerali', ovviamente dopo una corsetrta di 5km. Ci sarai?",
+      "time": "Meeting: 18:30, Start: 19:00",
+      "location": "porto_vecchio"
+    },
+    {
+      "date": "11/12/2025",
+      "title": "Easy Run Easy Aperitivo",
+      "description": "L'evento che tutti si meritano, la vera 'Easy Run' sta tornando...pronti per un aperitivo tutti assieme alla fine?",
+      "time": "Meeting: 18:45, Start: 19:00",
+      "location": "porto_vecchio"
+    },
+    {
+      "date": "18/12/2025",
+      "title": "Easy Run Easy Aperitivo",
+      "description": "Chi ha detto che un aperitivo non fa bene? Noi lo consideriamo un 'reintegro dei sali minerali', ovviamente dopo una corsetrta di 5km. Ci sarai?",
+      "time": "Meeting: 18:30, Start: 19:00",
+      "location": "porto_vecchio"
+    },
+    {
+      "date": "30/10/2025",
+      "title": "Easy Run Easy Aperitivo",
+      "description": "L'evento che tutti si meritano, la vera 'Easy Run' sta tornando...pronti per un aperitivo tutti assieme alla fine?",
+      "time": "Meeting: 18:45, Start: 19:00",
+      "location": "porto_vecchio"
+    },
+    {
+      "date": "6/11/2025",
+      "title": "Easy Run Easy Aperitivo",
+      "description": "Chi ha detto che un aperitivo non fa bene? Noi lo consideriamo un 'reintegro dei sali minerali', ovviamente dopo una corsetrta di 5km. Ci sarai?",
+      "time": "Meeting: 18:30, Start: 19:00",
+      "location": "porto_vecchio"
+    },
+    {
+      "date": "13/11/2025",
+      "title": "Easy Run Easy Aperitivo",
+      "description": "L'evento che tutti si meritano, la vera 'Easy Run' sta tornando...pronti per un aperitivo tutti assieme alla fine?",
+      "time": "Meeting: 18:45, Start: 19:00",
+      "location": "porto_vecchio"
+    },
+    {
+      "date": "20/11/2025",
+      "title": "Easy Run Easy Aperitivo",
+      "description": "Chi ha detto che un aperitivo non fa bene? Noi lo consideriamo un 'reintegro dei sali minerali', ovviamente dopo una corsetrta di 5km. Ci sarai?",
+      "time": "Meeting: 18:30, Start: 19:00",
+      "location": "porto_vecchio"
     }
   ]
 }
