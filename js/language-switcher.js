@@ -55,7 +55,7 @@ class LanguageSwitcher {
     localStorage.setItem('preferred-language', lang);
     this.updateLanguageDisplay();
     this.translatePage();
-    
+
     // Chiude i menu dopo la selezione
     this.closeLanguageMenus();
   }
@@ -63,7 +63,7 @@ class LanguageSwitcher {
   closeLanguageMenus() {
     const langMenu = document.getElementById('langMenu');
     const langMenuMobile = document.getElementById('langMenuMobile');
-    
+
     if (langMenu) langMenu.classList.add('hidden');
     if (langMenuMobile) langMenuMobile.classList.add('hidden');
   }
@@ -86,7 +86,7 @@ class LanguageSwitcher {
     if (!this.translations[this.currentLang]) return;
 
     const translations = this.translations[this.currentLang];
-    
+
     // Traduce tutti gli elementi con attributo data-translate
     document.querySelectorAll('[data-translate]').forEach(element => {
       const key = element.getAttribute('data-translate');
