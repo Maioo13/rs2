@@ -5,56 +5,64 @@
       "title": "Easy Run Easy Gelatino",
       "description": "La easy run che prima ti fa correre e poi...sorridere con un bel gelatino \u00e8 tornata!",
       "time": "Meeting: 18:45, Start 19:00",
-      "location": "porto_vecchio"
+      "location": "porto_vecchio",
+      "city" : "trieste"
     },
     {
       "date": "21/09/2025",
       "title": "Rampigada Santa",
       "description": "Unica ed inimitabile, la Rampigada Santa \u00e8 l'evento che non ti aspetti. 2km al 17% di pendenza, riuscirai a sconfiggere la salita?",
       "time": "Meeting: 9:00, Start: From 9:30",
-      "location": "scala_santa"
+      "location": "scala_santa",
+      "city" : "trieste"
     },
     {
       "date": "25/09/2025",
       "title": "Easy Run Easy Gelatino",
       "description": "Corsetta e gelatino finale, cosa c'\u00e8 di meglio? Secondo noi...nulla! Quindi, cosa aspetti a venire con noi?!",
       "time": "Meeting: 18:45, Start 19:00",
-      "location": "porto_vecchio"
+      "location": "porto_vecchio",
+      "city" : "trieste"
     },
     {
       "date": "2/10/2025",
       "title": "Easy International Run",
       "description": "Join us for a relaxed run through the city center and then...a very good 'aperitivo' will wait for us at the end!",
       "time": "Meeting: 18:45, Start 19:00",
-      "location": "porto_vecchio"
+      "location": "porto_vecchio",
+      "city" : "trieste"
     },
     {
       "date": "9/10/2025",
       "title": "Easy Run Easy Aperitivo",
       "description": "L'evento che tutti si meritano, la vera 'Easy Run' sta tornando...pronti per un aperitivo tutti assieme alla fine?",
       "time": "Meeting: 18:45, Start: 19:00",
-      "location": "porto_vecchio"
+      "location": "porto_vecchio",
+      "city" : "trieste"
     },
     {
       "date": "16/10/2025",
       "title": "Easy Run Easy Aperitivo",
       "description": "Chi ha detto che un aperitivo non fa bene? Noi lo consideriamo un 'reintegro dei sali minerali', ovviamente dopo una corsetrta di 5km. Ci sarai?",
       "time": "Meeting: 18:30, Start: 19:00",
-      "location": "porto_vecchio"
+      "location": "porto_vecchio",
+      "city" : "trieste"
     },
     {
       "date": "19/10/2025",
       "title": "Corsa dei Castelli",
       "description": "La Corsa dei Castelli \u00e8 tornata. Vieni con noi a scoprire la 10k pi\u00f9 bella di sempre, da Miramare a San Giusto vedrai il meglio di Trieste!",
       "time": "Meeting: 9:00, Start: 10:00",
-      "location": "miramare"
+      "location": "miramare",
+      "city" : "trieste"
     },
     {
       "date": "23/10/2025",
       "title": "Easy Run Easy Aperitivo",
       "description": "Dopo le corse di domenica, una 'Easy run' fa bene per non lasciare le gambe ferme ma neanche troppo in movimento!",
       "time": "Meeting: 18:30, Start: 19:00",
-      "location": "porto_vecchio"
+      "location": "porto_vecchio",
+      "city" : "trieste"
     },
     {
       "date": "19/10/2025",
@@ -63,7 +71,8 @@
       "time": "Meeting: 8:30, Start: 9:00",
       "location": {
         "name": "Ljubljana",
-        "url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d587.6618568803084!2d14.507934669076187!3d46.062461287444435!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47653299e9eb17a9%3A0xacb63b0695b827c6!2sDunajska%20c.%2018-20%2C%201000%20Ljubljana%2C%20Slovenia!5e1!3m2!1sit!2sit!4v1757931857426!5m2!1sit!2sit"
+        "url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d587.6618568803084!2d14.507934669076187!3d46.062461287444435!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47653299e9eb17a9%3A0xacb63b0695b827c6!2sDunajska%20c.%2018-20%2C%201000%20Ljubljana%2C%20Slovenia!5e1!3m2!1sit!2sit!4v1757931857426!5m2!1sit!2sit",
+        "city" : "trieste"
       }
     },
     {
@@ -73,7 +82,8 @@
       "time": "Meeting: 8:45, Start: 9:00",
       "location": {
         "name": "Mestre, Parco San Giuliano",
-        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d294.0797452445371!2d12.275930045770215!3d45.474360313643466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477eb3e3a7e6564d%3A0xe8dbeb23eb939ec3!2sParco%20di%20San%20Giuliano!5e0!3m2!1sit!2sit!4v1760909239719!5m2!1sit!2sit"
+        "url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d294.0797452445371!2d12.275930045770215!3d45.474360313643466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477eb3e3a7e6564d%3A0xe8dbeb23eb939ec3!2sParco%20di%20San%20Giuliano!5e0!3m2!1sit!2sit!4v1760909239719!5m2!1sit!2sit",
+        "city" : "trieste"
       }
     },
     {
@@ -81,350 +91,607 @@
       "title": "Easy Run Easy Sunrise",
       "description": "Torna la corsa all'alba per i mattinieri! Svegliatevi presto, allacciate le scarpe e...via!\n5km per poi gustarsi una buona colazione!",
       "time": "Meeting: 5:45, Start: 6:00",
-      "location": "porto_vecchio"
+      "location": "porto_vecchio",
+      "city" : "trieste"
     },
     {
       "date": "27/11/2025",
       "title": "Easy Run Easy Aperitivo",
       "description": "L'evento che tutti si meritano, la vera 'Easy Run' è tornata...pronti per un aperitivo tutti assieme alla fine?",
       "time": "Meeting: 18:45, Start: 19:00",
-      "location": "porto_vecchio"
+      "location": "porto_vecchio",
+      "city" : "trieste"
     },
     {
       "date": "4/12/2025",
       "title": "Easy Run Easy Aperitivo",
       "description": "Chi ha detto che un aperitivo non fa bene? Noi lo consideriamo un 'reintegro dei sali minerali', ovviamente dopo una corsetrta di 5km. Ci sarai?",
       "time": "Meeting: 18:30, Start: 19:00",
-      "location": "porto_vecchio"
+      "location": "porto_vecchio",
+      "city" : "trieste"
     },
     {
       "date": "11/12/2025",
       "title": "Easy Run Easy Aperitivo",
       "description": "L'evento che tutti si meritano, la vera 'Easy Run' è tornata...pronti per un aperitivo tutti assieme alla fine?",
       "time": "Meeting: 18:45, Start: 19:00",
-      "location": "porto_vecchio"
+      "location": "porto_vecchio",
+      "city" : "trieste"
     },
     {
       "date": "18/12/2025",
       "title": "Easy Run Easy Aperitivo",
       "description": "Chi ha detto che un aperitivo non fa bene? Noi lo consideriamo un 'reintegro dei sali minerali', ovviamente dopo una corsetrta di 5km. Ci sarai?",
       "time": "Meeting: 18:30, Start: 19:00",
-      "location": "porto_vecchio"
+      "location": "porto_vecchio",
+      "city" : "trieste"
     },
     {
       "date": "30/10/2025",
       "title": "Easy Run Easy Aperitivo",
       "description": "L'evento che tutti si meritano, la vera 'Easy Run' è tornata...pronti per un aperitivo tutti assieme alla fine?",
       "time": "Meeting: 18:45, Start: 19:00",
-      "location": "porto_vecchio"
+      "location": "porto_vecchio",
+      "city" : "trieste"
     },
     {
       "date": "6/11/2025",
       "title": "Easy Run Easy Aperitivo",
       "description": "Chi ha detto che un aperitivo non fa bene? Noi lo consideriamo un 'reintegro dei sali minerali', ovviamente dopo una corsetrta di 5km. Ci sarai?",
       "time": "Meeting: 18:30, Start: 19:00",
-      "location": "porto_vecchio"
+      "location": "porto_vecchio",
+      "city" : "trieste"
     },
     {
       "date": "13/11/2025",
       "title": "Easy Run Easy Aperitivo",
       "description": "L'evento che tutti si meritano, la vera 'Easy Run' è tornata...pronti per un aperitivo tutti assieme alla fine?",
       "time": "Meeting: 18:45, Start: 19:00",
-      "location": "porto_vecchio"
+      "location": "porto_vecchio",
+      "city" : "trieste"
     },
     {
       "date": "20/11/2025",
       "title": "Easy Run Easy Aperitivo",
       "description": "Chi ha detto che un aperitivo non fa bene? Noi lo consideriamo un 'reintegro dei sali minerali', ovviamente dopo una corsetrta di 5km. Ci sarai?",
       "time": "Meeting: 18:30, Start: 19:00",
-      "location": "porto_vecchio"
+      "location": "porto_vecchio",
+      "city" : "trieste"
     },
       {
         "date": "12/03/2026",
         "title": "Easy Run Easy Aperitivo",
         "description": "Chi ha detto che un aperitivo non fa bene? Noi lo consideriamo un 'reintegro dei sali minerali', ovviamente dopo una corsetta di 5km. Ci sarai?",
         "time": "Meeting: 18:45, Start: 19:00",
-        "location": "porto_vecchio"
+        "location": "porto_vecchio",
+        "city" : "trieste"
       },
     {
       "date": "19/03/2026",
       "title": "Easy Run Easy Aperitivo",
       "description": "5 km di chiacchiere, sorrisi e zero ansia da prestazione. Il ritmo lo decidiamo insieme, ma sull'aperitivo finale non si transige. Allacciati le scarpe e vieni!",
       "time": "Meeting: 18:45, Start: 19:00",
-      "location": "porto_vecchio"
+      "location": "porto_vecchio",
+      "city" : "trieste"
     },
     {
       "date": "26/03/2026",
       "title": "Easy Run Easy Aperitivo",
       "description": "Hai avuto una settimana pesante? Lascia lo stress a casa e vieni a scaricare la tensione correndo al tramonto. Il premio finale? Uno spritz in ottima compagnia!",
       "time": "Meeting: 18:45, Start: 19:00",
-      "location": "porto_vecchio"
+      "location": "porto_vecchio",
+      "city" : "trieste"
     },
     {
       "date": "02/04/2026",
       "title": "Easy Run Easy Aperitivo",
       "description": "Non conta quanto vai veloce, conta con chi corri. Unisciti al nostro gruppone per i classici 5km in Porto Vecchio: la scusa perfetta per staccare la spina e fare nuove amicizie.",
       "time": "Meeting: 18:45, Start: 19:00",
-      "location": "porto_vecchio"
+      "location": "porto_vecchio",
+      "city" : "trieste"
     },
     {
       "date": "09/04/2026",
       "title": "Easy Run Easy Aperitivo",
       "description": "Le giornate si allungano e la voglia di correre all'aperto aumenta! Accogliamo la primavera con la nostra combo preferita: corsa defaticante e brindisi post-allenamento. Ti aspettiamo!",
       "time": "Meeting: 18:45, Start: 19:00",
-      "location": "porto_vecchio"
+      "location": "porto_vecchio",
+      "city" : "trieste"
     },
     {
       "date": "16/04/2026",
       "title": "Easy Run Easy Aperitivo",
       "description": "Il giovedì è il nuovo venerdì! Inizia il weekend in anticipo con una corsetta vista mare. Niente cronometro, solo buone vibrazioni e un brindisi che ci aspetta al traguardo.",
       "time": "Meeting: 18:45, Start: 19:00",
-      "location": "porto_vecchio"
+      "location": "porto_vecchio",
+      "city" : "trieste"
     },
     {
       "date": "23/04/2026",
       "title": "Easy Run Easy Aperitivo",
       "description": "Pensi di non essere abbastanza in forma? Sbagliato! La nostra Easy Run è fatta apposta per chiacchierare senza affanno. E se proprio fai fatica... pensa alla birretta fresca alla fine!",
       "time": "Meeting: 18:45, Start: 19:00",
-      "location": "porto_vecchio"
+      "location": "porto_vecchio",
+      "city" : "trieste"
     },
     {
       "date": "30/04/2026",
       "title": "Easy Run Easy Aperitivo",
       "description": "Chiudiamo il mese nel migliore dei modi: 5km per sgranchire le gambe e un cin cin per celebrare i chilometri percorsi insieme. Porta un sorriso, al resto ci pensiamo noi!",
       "time": "Meeting: 18:45, Start: 19:00",
-      "location": "porto_vecchio"
+      "location": "porto_vecchio",
+      "city" : "trieste"
     },
     {
       "date": "07/05/2026",
       "title": "Easy Run Easy Aperitivo",
       "description": "Maggio è arrivato! Il clima perfetto per la nostra corsetta di gruppo in Porto Vecchio. Se ami muoverti in compagnia e non disdegni il post-workout al bar, questo è il posto giusto.",
       "time": "Meeting: 18:45, Start: 19:00",
-      "location": "porto_vecchio"
+      "location": "porto_vecchio",
+      "city" : "trieste"
     },
     {
       "date": "14/05/2026",
       "title": "Easy Run Easy Aperitivo",
       "description": "Stanco della solita routine del giovedì sera? Unisciti alla marea arancione! Corriamo, sudiamo il giusto e poi ci dedichiamo al vero sport agonistico: l'aperitivo. Non puoi mancare!",
       "time": "Meeting: 18:45, Start: 19:00",
-      "location": "porto_vecchio"
+      "location": "porto_vecchio",
+      "city" : "trieste"
     },
     {
       "date": "21/05/2026",
       "title": "Easy Run Easy Gelatino",
       "description": "Il caldo inizia a farsi sentire? La soluzione è una corsa leggera al tramonto seguita dal gelato più buono di Trieste. Stracciatella o pistacchio? Decidi tu dopo i 5km!",
       "time": "Meeting: 18:45, Start: 19:00",
-      "location": "porto_vecchio"
+      "location": "porto_vecchio",
+      "city" : "trieste"
     },
     {
       "date": "28/05/2026",
       "title": "Easy Run Easy Gelatino",
       "description": "Niente scioglie la fatica (e lo stress) come un bel cono in compagnia. Corriamo 5km tranquilli chiacchierando e poi dritti in gelateria. Chi fa il bis?",
       "time": "Meeting: 18:45, Start: 19:00",
-      "location": "porto_vecchio"
+      "location": "porto_vecchio",
+      "city" : "trieste"
     },
     {
       "date": "04/06/2026",
       "title": "Easy Run Easy Gelatino",
       "description": "L'unico 'muro' che vogliamo incontrare correndo è quello della vetrina dei gusti in gelateria! Unisciti a noi per una corsetta vista mare e un premio dolcissimo alla fine.",
       "time": "Meeting: 18:45, Start: 19:00",
-      "location": "porto_vecchio"
+      "location": "porto_vecchio",
+      "city" : "trieste"
     },
     {
       "date": "11/06/2026",
       "title": "Easy Run Easy Gelatino",
       "description": "Cosa c'è di meglio di una brezza serale in Porto Vecchio? Solo la coppetta che ci aspetta alla fine! Niente ansia da cronometro, solo voglia di stare insieme.",
       "time": "Meeting: 18:45, Start: 19:00",
-      "location": "porto_vecchio"
+      "location": "porto_vecchio",
+      "city" : "trieste"
     },
     {
       "date": "18/06/2026",
       "title": "Easy Run Easy Gelatino",
       "description": "Corriamo per passione, ma ammettiamolo: la vera motivazione oggi è la crema artigianale. 5km accessibili a tutti e poi via a ricaricare le energie nel modo più goloso possibile.",
       "time": "Meeting: 18:45, Start: 19:00",
-      "location": "porto_vecchio"
+      "location": "porto_vecchio",
+      "city" : "trieste"
     },
     {
       "date": "25/06/2026",
       "title": "Easy Run Easy Gelatino",
       "description": "L'estate chiama, la Run Society risponde! Allenamento super easy, zero competizione e un rinfrescante cono per rimetterci in pace col mondo. Ti unisci?",
       "time": "Meeting: 18:45, Start: 19:00",
-      "location": "porto_vecchio"
+      "location": "porto_vecchio",
+      "city" : "trieste"
     },
     {
       "date": "02/07/2026",
       "title": "Easy Run Easy Gelatino",
       "description": "Hai sudato abbastanza questa settimana? Vieni a scaricare la tensione! Un passo dopo l'altro ci avviciniamo al vero traguardo di stasera: il bancone della gelateria.",
       "time": "Meeting: 18:45, Start: 19:00",
-      "location": "porto_vecchio"
+      "location": "porto_vecchio",
+      "city" : "trieste"
     },
     {
       "date": "09/07/2026",
       "title": "Easy Run Easy Gelatino",
       "description": "Corsa leggera, chiacchiere pesanti sui migliori gusti in città. Se sei team frutta o team cioccolato non importa, l'importante è correre e divertirsi tutti insieme!",
       "time": "Meeting: 18:45, Start: 19:00",
-      "location": "porto_vecchio"
+      "location": "porto_vecchio",
+      "city" : "trieste"
     },
     {
       "date": "16/07/2026",
       "title": "Easy Run Easy Gelatino",
       "description": "Il nostro personal trainer dice che il gelato post-corsa accelera il recupero... o forse ce lo siamo inventati? Nel dubbio, 5km facili e poi andiamo subito a verificare!",
       "time": "Meeting: 18:45, Start: 19:00",
-      "location": "porto_vecchio"
+      "location": "porto_vecchio",
+      "city" : "trieste"
     },
     {
       "date": "23/07/2026",
       "title": "Easy Run Easy Gelatino",
       "description": "Sudare non è mai stato così dolce. Affrontiamo l'estate triestina con una corsetta in scioltezza e ci rinfreschiamo con i nostri gusti preferiti. Noi ci siamo, tu?",
       "time": "Meeting: 18:45, Start: 19:00",
-      "location": "porto_vecchio"
+      "location": "porto_vecchio",
+      "city" : "trieste"
     },
     {
       "date": "30/07/2026",
       "title": "Easy Run Easy Gelatino",
       "description": "Smettila di guardare l'orologio, stasera contano solo le calorie che andremo a bruciare (o riprendere) insieme. Porta le scarpe comode e tanta fame di gelato!",
       "time": "Meeting: 18:45, Start: 19:00",
-      "location": "porto_vecchio"
+      "location": "porto_vecchio",
+      "city" : "trieste"
     },
     {
       "date": "06/08/2026",
       "title": "Easy Run Easy Gelatino",
       "description": "Fa troppo caldo per correre veloci, ma fa benissimo per correre felici. E cosa rende più felici di un gelato artigianale dopo 5km di chiacchiere? Ti aspettiamo in gruppo!",
       "time": "Meeting: 18:45, Start: 19:00",
-      "location": "porto_vecchio"
+      "location": "porto_vecchio",
+      "city" : "trieste"
     },
     {
       "date": "13/08/2026",
       "title": "Easy Run Easy Gelatino",
       "description": "La nostra filosofia non cambia: sforzo minimo, massimo rendimento sociale. E d'estate il rendimento si misura in palline di gelato. Non mancare all'appello estivo!",
       "time": "Meeting: 18:45, Start: 19:00",
-      "location": "porto_vecchio"
+      "location": "porto_vecchio",
+      "city" : "trieste"
     },
     {
       "date": "20/08/2026",
       "title": "Easy Run Easy Gelatino",
       "description": "Le endorfine della corsa si sposano perfettamente con la dopamina del gelato al cioccolato. Non ci credi? Vieni a testare questa incredibile combo scientifica con noi!",
       "time": "Meeting: 18:45, Start: 19:00",
-      "location": "porto_vecchio"
+      "location": "porto_vecchio",
+      "city" : "trieste"
     },
     {
       "date": "27/08/2026",
       "title": "Easy Run Easy Gelatino",
       "description": "Salutiamo agosto nel migliore dei modi: falcate leggere sul lungomare, sorrisi e le mani sporche di gelato fuso. La corsa più dolce e divertente della settimana è servita!",
       "time": "Meeting: 18:45, Start: 19:00",
-      "location": "porto_vecchio"
+      "location": "porto_vecchio",
+      "city" : "trieste"
     },
     {
       "date": "16/03/2026",
       "title": "Road to 21K - Allenamento Lunedì",
       "description": "Inizia ufficialmente il nostro percorso verso la Mezza Maratona! Insieme agli esperti di Trieste Atletica e Trieste Spring Run, getteremo le basi per i tuoi 21K. Rompiamo il ghiaccio, ci sarai?",
       "time": "Meeting: 19:15, Start: 19:30",
-      "location": "Scoprilo iscrivendoti gratuitamente alla preparazione oppure contattaci su Instagram per maggiori informazioni"
+      "location": "Scoprilo iscrivendoti gratuitamente alla preparazione oppure contattaci su Instagram per maggiori informazioni",
+      "city" : "trieste"
     },
     {
       "date": "20/03/2026",
       "title": "Road to 21K - Allenamento Venerdì",
       "description": "Chiudiamo la settimana con il giusto ritmo. Preparare la Trieste Spring Run non è mai stato così stimolante! Affidati ai consigli dei nostri coach e goditi il viaggio verso il traguardo.",
       "time": "Meeting: 19:15, Start: 19:30",
-      "location": "Scoprilo iscrivendoti gratuitamente alla preparazione oppure contattaci su Instagram per maggiori informazioni"
+      "location": "Scoprilo iscrivendoti gratuitamente alla preparazione oppure contattaci su Instagram per maggiori informazioni",
+      "city" : "trieste"
     },
     {
       "date": "23/03/2026",
       "title": "Road to 21K - Allenamento Lunedì",
       "description": "Nuovo lunedì, nuova energia! Il programma Road to 21K entra nel vivo. Sotto la guida di Trieste Atletica lavoreremo sulla tecnica e sulla resistenza. La fatica condivisa pesa la metà!",
       "time": "Meeting: 19:15, Start: 19:30",
-      "location": "Scoprilo iscrivendoti gratuitamente alla preparazione oppure contattaci su Instagram per maggiori informazioni"
+      "location": "Scoprilo iscrivendoti gratuitamente alla preparazione oppure contattaci su Instagram per maggiori informazioni",
+      "city" : "trieste"
     },
     {
       "date": "27/03/2026",
       "title": "Road to 21K - Allenamento Venerdì",
       "description": "Venerdì sera alternativo? Scarpette allacciate e via! Unisciti al gruppo Road to 21K: in collaborazione con Trieste Spring Run stiamo costruendo la tua forma migliore, chilometro dopo chilometro.",
       "time": "Meeting: 19:15, Start: 19:30",
-      "location": "Scoprilo iscrivendoti gratuitamente alla preparazione oppure contattaci su Instagram per maggiori informazioni"
+      "location": "Scoprilo iscrivendoti gratuitamente alla preparazione oppure contattaci su Instagram per maggiori informazioni",
+      "city" : "trieste"
     },
     {
       "date": "30/03/2026",
       "title": "Road to 21K - Allenamento Lunedì",
       "description": "Iniziare la settimana correndo è il segreto per affrontarla al top. Continua la preparazione ai 21K con i feedback preziosi dei tecnici di Trieste Atletica. Non saltare la sessione!",
       "time": "Meeting: 19:15, Start: 19:30",
-      "location": "Scoprilo iscrivendoti gratuitamente alla preparazione oppure contattaci su Instagram per maggiori informazioni"
+      "location": "Scoprilo iscrivendoti gratuitamente alla preparazione oppure contattaci su Instagram per maggiori informazioni",
+      "city" : "trieste"
     },
     {
       "date": "03/04/2026",
       "title": "Road to 21K - Allenamento Venerdì",
       "description": "Il weekend è alle porte, ma prima facciamo il pieno di endorfine! La Road to 21K ti aspetta per macinare chilometri di qualità sognando l'arrivo della Trieste Spring Run.",
       "time": "Meeting: 19:15, Start: 19:30",
-      "location": "Scoprilo iscrivendoti gratuitamente alla preparazione oppure contattaci su Instagram per maggiori informazioni"
+      "location": "Scoprilo iscrivendoti gratuitamente alla preparazione oppure contattaci su Instagram per maggiori informazioni",
+      "city" : "trieste"
     },
     {
       "date": "06/04/2026",
       "title": "Road to 21K - Allenamento Lunedì",
       "description": "I chilometri sul piano iniziano ad aumentare, ma anche la nostra tenuta! Affronta questo allenamento con la carica della Run Society e l'esperienza di Trieste Atletica. Obiettivo 21K!",
       "time": "Meeting: 19:15, Start: 19:30",
-      "location": "Scoprilo iscrivendoti gratuitamente alla preparazione oppure contattaci su Instagram per maggiori informazioni"
+      "location": "Scoprilo iscrivendoti gratuitamente alla preparazione oppure contattaci su Instagram per maggiori informazioni",
+      "city" : "trieste"
     },
     {
       "date": "10/04/2026",
       "title": "Road to 21K - Allenamento Venerdì",
       "description": "Senti già l'adrenalina della gara? Il venerdì della Road to 21K è sacro. Impegno, sorrisi e un programma studiato con Trieste Spring Run per non lasciare nulla al caso.",
       "time": "Meeting: 19:15, Start: 19:30",
-      "location": "Scoprilo iscrivendoti gratuitamente alla preparazione oppure contattaci su Instagram per maggiori informazioni"
+      "location": "Scoprilo iscrivendoti gratuitamente alla preparazione oppure contattaci su Instagram per maggiori informazioni",
+      "city" : "trieste"
     },
     {
       "date": "13/04/2026",
       "title": "Road to 21K - Allenamento Lunedì",
       "description": "Nessuna scusa, nemmeno oggi! Il traguardo della mezza maratona si fa sempre più vicino. Con Trieste Atletica al nostro fianco continuiamo a spingere con testa e gambe.",
       "time": "Meeting: 19:15, Start: 19:30",
-      "location": "Scoprilo iscrivendoti gratuitamente alla preparazione oppure contattaci su Instagram per maggiori informazioni"
+      "location": "Scoprilo iscrivendoti gratuitamente alla preparazione oppure contattaci su Instagram per maggiori informazioni",
+      "city" : "trieste"
     },
     {
       "date": "17/04/2026",
       "title": "Road to 21K - Allenamento Venerdì",
       "description": "Venerdì di fuoco per la nostra Road to 21K! La mezza della Trieste Spring Run è all'orizzonte. Concentrazione, tecnica e la solita fantastica energia del nostro gruppone arancione.",
       "time": "Meeting: 19:15, Start: 19:30",
-      "location": "Scoprilo iscrivendoti gratuitamente alla preparazione oppure contattaci su Instagram per maggiori informazioni"
+      "location": "Scoprilo iscrivendoti gratuitamente alla preparazione oppure contattaci su Instagram per maggiori informazioni",
+      "city" : "trieste"
     },
     {
       "date": "20/04/2026",
       "title": "Road to 21K - Allenamento Lunedì",
       "description": "Manca sempre meno! Inizia la settimana con il piede giusto. Il programma strutturato con Trieste Atletica ci sta trasformando. Vieni a scoprire di cosa sei capace!",
       "time": "Meeting: 19:15, Start: 19:30",
-      "location": "Scoprilo iscrivendoti gratuitamente alla preparazione oppure contattaci su Instagram per maggiori informazioni"
+      "location": "Scoprilo iscrivendoti gratuitamente alla preparazione oppure contattaci su Instagram per maggiori informazioni",
+      "city" : "trieste"
     },
     {
       "date": "24/04/2026",
       "title": "Road to 21K - Allenamento Venerdì",
       "description": "Il venerdì sera si corre verso i grandi obiettivi. La collaborazione con Trieste Spring Run ti porta dritta/o alla finish line. Facciamo sul serio, ma senza mai perdere il sorriso!",
       "time": "Meeting: 19:15, Start: 19:30",
-      "location": "Scoprilo iscrivendoti gratuitamente alla preparazione oppure contattaci su Instagram per maggiori informazioni"
+      "location": "Scoprilo iscrivendoti gratuitamente alla preparazione oppure contattaci su Instagram per maggiori informazioni",
+      "city" : "trieste"
     },
     {
       "date": "27/04/2026",
       "title": "Road to 21K - Allenamento Lunedì",
       "description": "Ultimo sforzo del mese! I progressi si vedono e la distanza non fa più paura. Grazie ai consigli di Trieste Atletica stiamo affinando gli ultimi importanti dettagli. Forza!",
       "time": "Meeting: 19:15, Start: 19:30",
-      "location": "Scoprilo iscrivendoti gratuitamente alla preparazione oppure contattaci su Instagram per maggiori informazioni"
+      "location": "Scoprilo iscrivendoti gratuitamente alla preparazione oppure contattaci su Instagram per maggiori informazioni",
+      "city" : "trieste"
     },
     {
       "date": "01/05/2026",
       "title": "Road to 21K - Allenamento Venerdì",
       "description": "Si corre anche oggi! La Trieste Spring Run è quasi qui: mantieni il ritmo, testa la tua resistenza e goditi questo viaggio straordinario assieme alla tua running crew preferita.",
       "time": "Meeting: 19:15, Start: 19:30",
-      "location": "Scoprilo iscrivendoti gratuitamente alla preparazione oppure contattaci su Instagram per maggiori informazioni"
+      "location": "Scoprilo iscrivendoti gratuitamente alla preparazione oppure contattaci su Instagram per maggiori informazioni",
+      "city" : "trieste"
     },
     {
       "date": "04/05/2026",
       "title": "Road to 21K - Allenamento Lunedì",
       "description": "Ci siamo! I chilometri nelle gambe ci sono, ora serve solo fare il carico di sicurezza. Sessione di rifinitura tecnica con Trieste Atletica per arrivare al top alla Mezza Maratona.",
       "time": "Meeting: 19:15, Start: 19:30",
-      "location": "Scoprilo iscrivendoti gratuitamente alla preparazione oppure contattaci su Instagram per maggiori informazioni"
+      "location": "Scoprilo iscrivendoti gratuitamente alla preparazione oppure contattaci su Instagram per maggiori informazioni",
+      "city" : "trieste"
     },
     {
       "date": "08/05/2026",
       "title": "Road to 21K - Allenamento Venerdì",
       "description": "Ultimo allenamento prima del grande evento! Scarico, gambe leggere e tanta carica emotiva. Con Trieste Spring Run abbiamo costruito qualcosa di speciale: godiamoci questa corsa prep-gara!",
       "time": "Meeting: 19:15, Start: 19:30",
-      "location": "Scoprilo iscrivendoti gratuitamente alla preparazione oppure contattaci su Instagram per maggiori informazioni"
+      "location": "Scoprilo iscrivendoti gratuitamente alla preparazione oppure contattaci su Instagram per maggiori informazioni",
+      "city" : "trieste"
+    },
+    {"date": "05/03/2026",
+    "title": "Easy Run Easy Spritz",
+    "description": "Immersi nella natura, tra sorrisi, risate e tramonti mozzafiato. Questa è la nostra Easy Run. E alla fine... un meritatissimo aperitivo all'insegna della corsa e dell'amicizia. Ti unisci a noi?",
+    "time": "Meeting: 19:15, Start: 19:30",
+    "location": "forte_marghera",
+    "city": "venezia"
+    },
+    {
+      "date": "12/03/2026",
+      "title": "Easy Run Easy Spritz",
+      "description": "Fatica che svanisce davanti a uno spritz ghiacciato? È la nostra promessa! Vieni a correre con noi e scopri quanto è bello sudare col sorriso.",
+      "time": "Meeting: 19:15, Start: 19:30",
+      "location": "forte_marghera",
+      "city": "venezia"
+    },
+    {
+      "date": "19/03/2026",
+      "title": "Easy Run Easy Spritz",
+      "description": "Lasciati alle spalle lo stress della giornata. Una corsetta vista laguna e un brindisi in ottima compagnia ti aspettano per spezzare la settimana!",
+      "time": "Meeting: 19:15, Start: 19:30",
+      "location": "forte_marghera",
+      "city": "venezia"
+    },
+    {
+      "date": "26/03/2026",
+      "title": "Easy Run Easy Spritz",
+      "description": "Il giovedì sera ha un solo sapore: quello della libertà! Allaccia le scarpe, vieni a conoscere nuovi amici e goditi un meritato terzo tempo.",
+      "time": "Meeting: 19:15, Start: 19:30",
+      "location": "forte_marghera",
+      "city": "venezia"
+    },
+    {
+      "date": "02/04/2026",
+      "title": "Easy Run Easy Spritz",
+      "description": "Correre da soli è bello, ma farlo in gruppo e finire con uno spritz in mano è un'altra storia! Ti unisci alla nostra crew veneziana questa settimana?",
+      "time": "Meeting: 19:15, Start: 19:30",
+      "location": "forte_marghera",
+      "city": "venezia"
+    },
+    {
+      "date": "09/04/2026",
+      "title": "Easy Run Easy Spritz",
+      "description": "Che tu sia un runner esperto o abbia appena comprato le scarpette, il nostro passo è quello del divertimento. Vieni a scoprire l'energia della nostra Easy Run!",
+      "time": "Meeting: 19:15, Start: 19:30",
+      "location": "forte_marghera",
+      "city": "venezia"
+    },
+    {
+      "date": "16/04/2026",
+      "title": "Easy Run Easy Spritz",
+      "description": "Aria aperta, primavera in arrivo e vibrazioni positive. La nostra ricetta prevede 5km di corsa e 100% di sorrisi. Manchi solo tu!",
+      "time": "Meeting: 19:15, Start: 19:30",
+      "location": "forte_marghera",
+      "city": "venezia"
+    },
+    {
+      "date": "23/04/2026",
+      "title": "Easy Run Easy Spritz",
+      "description": "Rompi la monotonia! La nostra Easy Run è il momento perfetto per fare sport, staccare la spina e brindare con chi condivide le tue passioni.",
+      "time": "Meeting: 19:15, Start: 19:30",
+      "location": "forte_marghera",
+      "city": "venezia"
+    },
+    {
+      "date": "30/04/2026",
+      "title": "Easy Run Easy Spritz",
+      "description": "Dicono che lo spritz post-corsa abbia un sapore speciale... vieni a verificare di persona! Chiama un amico e unitevi alla nostra tribù.",
+      "time": "Meeting: 19:15, Start: 19:30",
+      "location": "forte_marghera",
+      "city": "venezia"
+    },
+    {
+      "date": "07/05/2026",
+      "title": "Easy Run Easy Spritz",
+      "description": "Non importa a che velocità vai, l'importante è arrivare in tempo per l'aperitivo! Unisciti a noi per una serata di sport e puro chill.",
+      "time": "Meeting: 19:15, Start: 19:30",
+      "location": "forte_marghera",
+      "city": "venezia"
+    },
+    {
+      "date": "14/05/2026",
+      "title": "Easy Run Easy Spritz",
+      "description": "Il sole cala, la musica nelle cuffiette lascia spazio alle chiacchiere e il sudore si trasforma in brindisi. Pronti per un'altra run epica?",
+      "time": "Meeting: 19:15, Start: 19:30",
+      "location": "forte_marghera",
+      "city": "venezia"
+    },
+    {
+      "date": "21/05/2026",
+      "title": "Easy Run Easy Spritz",
+      "description": "Allenamento e socialità non sono mai stati così vicini. Vieni a correre al tuo ritmo e goditi la compagnia del nostro fantastico gruppo!",
+      "time": "Meeting: 19:15, Start: 19:30",
+      "location": "forte_marghera",
+      "city": "venezia"
+    },
+    {
+      "date": "28/05/2026",
+      "title": "Easy Run Easy Spritz",
+      "description": "Metti in pausa i pensieri e fai partire le gambe. La nostra corsa del giovedì è la scusa perfetta per stare bene insieme. Ti aspettiamo!",
+      "time": "Meeting: 19:15, Start: 19:30",
+      "location": "forte_marghera",
+      "city": "venezia"
+    },
+    {
+      "date": "04/06/2026",
+      "title": "Easy Run Easy Spritz",
+      "description": "Chi l'ha detto che fare sport deve essere una sofferenza? Noi lo trasformiamo in una festa! Allacciati le scarpe e unisciti alla community.",
+      "time": "Meeting: 19:15, Start: 19:30",
+      "location": "forte_marghera",
+      "city": "venezia"
+    },
+    {
+      "date": "11/06/2026",
+      "title": "Easy Run Easy Spritz",
+      "description": "Scarica la tensione della giornata e fai il pieno di endorfine. Ti promettiamo una corsa panoramica e un aperitivo che non dimenticherai.",
+      "time": "Meeting: 19:15, Start: 19:30",
+      "location": "forte_marghera",
+      "city": "venezia"
+    },
+    {
+      "date": "18/06/2026",
+      "title": "Easy Run Easy Spritz",
+      "description": "Il nostro mantra? Si parte insieme, si arriva insieme, si brinda insieme! Non restare sul divano, il Parco San Giuliano ci aspetta.",
+      "time": "Meeting: 19:15, Start: 19:30",
+      "location": "forte_marghera",
+      "city": "venezia"
+    },
+    {
+      "date": "25/06/2026",
+      "title": "Easy Run Easy Spritz",
+      "description": "Colori del tramonto estivo, brezza serale e una community pronta ad accoglierti a braccia aperte. La tua nuova routine inizia da qui!",
+      "time": "Meeting: 19:15, Start: 19:30",
+      "location": "forte_marghera",
+      "city": "venezia"
+    },
+    {
+      "date": "02/07/2026",
+      "title": "Easy Run Easy Spritz",
+      "description": "Se stai cercando la motivazione per iniziare a correre... l'hai trovata! Corsa rilassante e un ottimo spritz ghiacciato per ricaricare le batterie.",
+      "time": "Meeting: 19:15, Start: 19:30",
+      "location": "forte_marghera",
+      "city": "venezia"
+    },
+    {
+      "date": "09/07/2026",
+      "title": "Easy Run Easy Spritz",
+      "description": "Festeggiamo l'avvicinarsi del weekend nel modo migliore: sudando in compagnia e rilassandoci con un bel bicchiere in mano. Ci sei?",
+      "time": "Meeting: 19:15, Start: 19:30",
+      "location": "forte_marghera",
+      "city": "venezia"
+    },
+    {
+      "date": "16/07/2026",
+      "title": "Easy Run Easy Spritz",
+      "description": "La vera vittoria non è il tempo sul cronometro, ma la qualità dei momenti condivisi. Vieni a creare nuovi ricordi con la nostra run family!",
+      "time": "Meeting: 19:15, Start: 19:30",
+      "location": "forte_marghera",
+      "city": "venezia"
+    },
+    {
+      "date": "23/07/2026",
+      "title": "Easy Run Easy Spritz",
+      "description": "Un'ora di corsa al parco e poi via a fare festa. La nostra Easy Run è il compromesso perfetto tra fitness e movida veneziana. Non mancare!",
+      "time": "Meeting: 19:15, Start: 19:30",
+      "location": "forte_marghera",
+      "city": "venezia"
+    },
+    {
+      "date": "30/07/2026",
+      "title": "Easy Run Easy Spritz",
+      "description": "Metti da parte i record personali, stasera si corre per il piacere di farlo. Ti aspettiamo per macinare chilometri e sorrisi.",
+      "time": "Meeting: 19:15, Start: 19:30",
+      "location": "forte_marghera",
+      "city": "venezia"
+    },
+    {
+      "date": "06/08/2026",
+      "title": "Easy Run Easy Spritz",
+      "description": "La stanchezza passa, le amicizie restano! Unisciti al nostro gruppo per una corsetta defaticante e un aperitivo super rinfrescante.",
+      "time": "Meeting: 19:15, Start: 19:30",
+      "location": "forte_marghera",
+      "city": "venezia"
+    },
+    {
+      "date": "13/08/2026",
+      "title": "Easy Run Easy Spritz",
+      "description": "Il giovedì è il nuovo venerdì! Inizia a festeggiare in anticipo con una corsa rilassante e il nostro immancabile terzo tempo.",
+      "time": "Meeting: 19:15, Start: 19:30",
+      "location": "forte_marghera",
+      "city": "venezia"
+    },
+    {
+      "date": "20/08/2026",
+      "title": "Easy Run Easy Spritz",
+      "description": "Nessuna pressione, nessun giudizio. Solo bella gente, un po' di sano sport e la voglia di condividere un aperitivo al tramonto.",
+      "time": "Meeting: 19:15, Start: 19:30",
+      "location": "forte_marghera",
+      "city": "venezia"
+    },
+    {
+      "date": "27/08/2026",
+      "title": "Easy Run Easy Spritz",
+      "description": "Saluta l'estate sudando e sorridendo! Festeggiamo insieme i chilometri percorsi in questi mesi con uno spritz speciale. Ci vediamo al parco!",
+      "time": "Meeting: 19:15, Start: 19:30",
+      "location": "forte_marghera",
+      "city": "venezia"
     }
 
   ]
