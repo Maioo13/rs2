@@ -463,7 +463,7 @@
       "city" : "trieste"
     },
     {
-      "date": "01/05/2026",
+      "date": "30/04/2026",
       "title": "Road to 21K - Allenamento Venerdì",
       "description": "Si corre anche oggi! La Trieste Spring Run è quasi qui: mantieni il ritmo, testa la tua resistenza e goditi questo viaggio straordinario assieme alla tua running crew preferita.",
       "time": "Meeting: 19:15, Start: 19:30",
@@ -471,27 +471,12 @@
       "city" : "trieste"
     },
     {
-      "date": "04/05/2026",
-      "title": "Road to 21K - Allenamento Lunedì",
-      "description": "Ci siamo! I chilometri nelle gambe ci sono, ora serve solo fare il carico di sicurezza. Sessione di rifinitura tecnica con Trieste Atletica per arrivare al top alla Mezza Maratona.",
+      "date": "05/03/2026",
+      "title": "Easy Run Easy Spritz",
+      "description": "Immersi nella natura, tra sorrisi, risate e tramonti mozzafiato. Questa è la nostra Easy Run. E alla fine... un meritatissimo aperitivo all'insegna della corsa e dell'amicizia. Ti unisci a noi?",
       "time": "Meeting: 19:15, Start: 19:30",
-      "location": "Scoprilo iscrivendoti gratuitamente alla preparazione oppure contattaci su Instagram per maggiori informazioni",
-      "city" : "trieste"
-    },
-    {
-      "date": "08/05/2026",
-      "title": "Road to 21K - Allenamento Venerdì",
-      "description": "Ultimo allenamento prima del grande evento! Scarico, gambe leggere e tanta carica emotiva. Con Trieste Spring Run abbiamo costruito qualcosa di speciale: godiamoci questa corsa prep-gara!",
-      "time": "Meeting: 19:15, Start: 19:30",
-      "location": "Scoprilo iscrivendoti gratuitamente alla preparazione oppure contattaci su Instagram per maggiori informazioni",
-      "city" : "trieste"
-    },
-    {"date": "05/03/2026",
-    "title": "Easy Run Easy Spritz",
-    "description": "Immersi nella natura, tra sorrisi, risate e tramonti mozzafiato. Questa è la nostra Easy Run. E alla fine... un meritatissimo aperitivo all'insegna della corsa e dell'amicizia. Ti unisci a noi?",
-    "time": "Meeting: 19:15, Start: 19:30",
-    "location": "forte_marghera",
-    "city": "venezia"
+      "location": "forte_marghera",
+      "city": "venezia"
     },
     {
       "date": "12/03/2026",
