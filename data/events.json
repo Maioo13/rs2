@@ -208,11 +208,14 @@
     },
     {
       "date": "23/04/2026",
-      "title": "Easy Run Easy Aperitivo",
-      "description": "Pensi di non essere abbastanza in forma? Sbagliato! La nostra Easy Run è fatta apposta per chiacchierare senza affanno. E se proprio fai fatica... pensa alla birretta fresca alla fine!",
-      "time": "Meeting: 18:45, Start: 19:00",
-      "location": "porto_vecchio",
-      "city" : "trieste"
+      "title": "Easy Run x UniTS Pro Ben",
+      "description": "Pensi che la Psicologia e lo Sport non siano collegate? Vieni a scoprirlo con un talk, la solita Easy Run e poi...andiamo a festeggiare assieme!",
+      "time": "Meeting: 18:00, Start: 18:45",
+      "location": {
+        "name": "Centrale Idrodinamica",
+        "url": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d203.76042452618944!2d13.761252986892217!3d45.66678462181286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sit!2sit!4v1776847586909!5m2!1sit!2sit",
+        "city" : "trieste"
+      }
     },
     {
       "date": "30/04/2026",
