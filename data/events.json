@@ -522,7 +522,33 @@
       "time": "Meeting: 19:15, Start: 19:30",
       "location": "forte_marghera",
       "city": "venezia"
+    },
+    {
+      "date": "10/05/2026",
+      "title": "Easy Lunghetto",
+      "description": "Solo good vibes e chiacchiere: 15k di easy lunghetto per ricaricare le pile insieme. Zero ansia da cronometro, solo il piacere di correre in compagnia.",
+      "time": "Meeting: 9:00, Start: 9:15",
+      "location": "porto_vecchio",
+      "city": "trieste"
+    },
+    {
+      "date": "02/05/2026",
+      "title": "ShakeOut Run - Trieste Spring Run",
+      "description": "Scalda i muscoli al meglio con la ShakeOut Run Ufficiale della Trieste Spring Run. 5km in compagnia, per scaldare i muscoli e prepararsi assieme alla gara! Inoltre, al termine, gadget offerti da Shokz e Ambrosoli!.",
+      "time": "Meeting: 9:30, Start: 10:00",
+      "location": "piazza_unita",
+      "city": "trieste"
+    },
+    {
+      "date": "03/05/2026",
+      "title": "Trieste Spring Run",
+      "description": "La Gara di Trieste per eccellenza. Dopo tanta preparazione, è arrivata la Trieste Spring Run, con la sua caratteristica 'Bavisela' non competitiva, la '21K' e '42K'. Ci sarai?",
+      "time": "Meeting: 7:00 (Stazione Centrale), Start: 10:00 (Sistiana)",
+      "location": {
+        "name": "Sistiana",
+        "url": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d585.0550644132838!2d13.638096937435737!3d45.77105835862648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sit!2sit!4v1778244611443!5m2!1sit!2sit",
+        "city" : "trieste"
+      }
     }
-
   ]
 }
