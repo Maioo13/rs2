@@ -109,99 +109,131 @@
     },
     {
       "date": "11/06/2026",
-      "title": "Easy Run Easy Gelatino",
-      "description": "Cosa c'è di meglio di una brezza serale in Porto Vecchio? Solo la coppetta che ci aspetta alla fine! Niente ansia da cronometro, solo voglia di stare insieme.",
+      "title": "Easy Run Easy Bagnetto x BEWELL",
+      "description": "Come accogliere gli amici di Bewell se che caldo? Semplice: con 5km di corsa rigenerante e un tuffo rinfrescante a Barcola. Chiacchiere, corsa leggera e relax totale al tramonto!",
       "time": "Meeting: 18:45, Start: 19:00",
-      "location": "porto_vecchio",
-      "city" : "trieste"
+      "location": "barcola",
+      "city": "trieste"
     },
     {
       "date": "18/06/2026",
-      "title": "Easy Run Easy Gelatino",
-      "description": "Corriamo per passione, ma ammettiamolo: la vera motivazione oggi è la crema artigianale. 5km accessibili a tutti e poi via a ricaricare le energie nel modo più goloso possibile.",
+      "title": "Easy Run Easy Bagnetto",
+      "description": "Giovedì significa solo una cosa: Easy Run fino a Barcola e poi dritti in acqua! Portate il costume, alle buone vibrazioni ci pensiamo noi.",
       "time": "Meeting: 18:45, Start: 19:00",
-      "location": "porto_vecchio",
-      "city" : "trieste"
+      "location": "barcola",
+      "city": "trieste"
     },
     {
       "date": "25/06/2026",
-      "title": "Easy Run Easy Gelatino",
-      "description": "L'estate chiama, la Run Society risponde! Allenamento super easy, zero competizione e un rinfrescante cono per rimetterci in pace col mondo. Ti unisci?",
+      "title": "Easy Run Easy Bagnetto",
+      "description": "Unisciti a noi per 5km di puro relax a passo tranquillo. Destinazione Barcola per un bel bagno rigenerante post-corsa. Good vibes only!",
       "time": "Meeting: 18:45, Start: 19:00",
-      "location": "porto_vecchio",
-      "city" : "trieste"
+      "location": "barcola",
+      "city": "trieste"
     },
     {
       "date": "02/07/2026",
-      "title": "Easy Run Easy Gelatino",
-      "description": "Hai sudato abbastanza questa settimana? Vieni a scaricare la tensione! Un passo dopo l'altro ci avviciniamo al vero traguardo di stasera: il bancone della gelateria.",
+      "title": "Easy Run Easy Bagnetto",
+      "description": "Scarichiamo la tensione della settimana con una corsa easy in compagnia e un bell'esordio in mare a Barcola. Impossibile mancare!",
       "time": "Meeting: 18:45, Start: 19:00",
-      "location": "porto_vecchio",
-      "city" : "trieste"
+      "location": "barcola",
+      "city": "trieste"
     },
     {
       "date": "09/07/2026",
-      "title": "Easy Run Easy Gelatino",
-      "description": "Corsa leggera, chiacchiere pesanti sui migliori gusti in città. Se sei team frutta o team cioccolato non importa, l'importante è correre e divertirsi tutti insieme!",
+      "title": "Easy Run Easy Bagnetto",
+      "description": "Corsa, chiacchiere e un bagno al tramonto. Il programma perfetto per questo giovedì a Barcola. 5km facili facili per tutti!",
       "time": "Meeting: 18:45, Start: 19:00",
-      "location": "porto_vecchio",
-      "city" : "trieste"
+      "location": "barcola",
+      "city": "trieste"
     },
     {
       "date": "16/07/2026",
-      "title": "Easy Run Easy Gelatino",
-      "description": "Il nostro personal trainer dice che il gelato post-corsa accelera il recupero... o forse ce lo siamo inventati? Nel dubbio, 5km facili e poi andiamo subito a verificare!",
+      "title": "Easy Run Easy Bagnetto",
+      "description": "Niente batte una corsa leggera seguita da un bagno di gruppo a Barcola. Rigeneriamoci assieme con tanta buona energia!",
       "time": "Meeting: 18:45, Start: 19:00",
-      "location": "porto_vecchio",
-      "city" : "trieste"
+      "location": "barcola",
+      "city": "trieste"
     },
     {
       "date": "23/07/2026",
-      "title": "Easy Run Easy Gelatino",
-      "description": "Sudare non è mai stato così dolce. Affrontiamo l'estate triestina con una corsetta in scioltezza e ci rinfreschiamo con i nostri gusti preferiti. Noi ci siamo, tu?",
+      "title": "Easy Run Easy Bagnetto",
+      "description": "Corsa tranquilla di 5km e poi tutti in acqua a Barcola per rinfrescare le gambe (e la mente). Portate la vostra energia migliore!",
       "time": "Meeting: 18:45, Start: 19:00",
-      "location": "porto_vecchio",
-      "city" : "trieste"
+      "location": "barcola",
+      "city": "trieste"
     },
     {
       "date": "30/07/2026",
-      "title": "Easy Run Easy Gelatino",
-      "description": "Smettila di guardare l'orologio, stasera contano solo le calorie che andremo a bruciare (o riprendere) insieme. Porta le scarpe comode e tanta fame di gelato!",
+      "title": "Easy Run Easy Bagnetto",
+      "description": "Gambe leggere, passo rilassato e il mare di Barcola che ci aspetta per un tuffo rigenerante post-allenamento. Chi viene?",
       "time": "Meeting: 18:45, Start: 19:00",
-      "location": "porto_vecchio",
-      "city" : "trieste"
+      "location": "barcola",
+      "city": "trieste"
     },
     {
       "date": "06/08/2026",
-      "title": "Easy Run Easy Gelatino",
-      "description": "Fa troppo caldo per correre veloci, ma fa benissimo per correre felici. E cosa rende più felici di un gelato artigianale dopo 5km di chiacchiere? Ti aspettiamo in gruppo!",
+      "title": "Easy Run Easy Bagnetto",
+      "description": "Giovedì sera alternativo: corriamo 5km in scioltezza lungo la costa e poi ci godiamo un bel bagno rigenerante in compagnia.",
       "time": "Meeting: 18:45, Start: 19:00",
-      "location": "porto_vecchio",
-      "city" : "trieste"
+      "location": "barcola",
+      "city": "trieste"
     },
     {
       "date": "13/08/2026",
-      "title": "Easy Run Easy Gelatino",
-      "description": "La nostra filosofia non cambia: sforzo minimo, massimo rendimento sociale. E d'estate il rendimento si misura in palline di gelato. Non mancare all'appello estivo!",
+      "title": "Easy Run Easy Bagnetto",
+      "description": "La combo perfetta dell'estate: corsa easy e bagnetto a Barcola. Vieni a fare due chiacchiere e un tuffo rinfrescante con noi!",
       "time": "Meeting: 18:45, Start: 19:00",
-      "location": "porto_vecchio",
-      "city" : "trieste"
+      "location": "barcola",
+      "city": "trieste"
     },
     {
       "date": "20/08/2026",
-      "title": "Easy Run Easy Gelatino",
-      "description": "Le endorfine della corsa si sposano perfettamente con la dopamina del gelato al cioccolato. Non ci credi? Vieni a testare questa incredibile combo scientifica con noi!",
+      "title": "Easy Run Easy Bagnetto",
+      "description": "Puntuali per 5km di corsa tranquilla e poi un salto in mare a Barcola per celebrare l'estate. Solo vibrazioni positive!",
       "time": "Meeting: 18:45, Start: 19:00",
-      "location": "porto_vecchio",
-      "city" : "trieste"
+      "location": "barcola",
+      "city": "trieste"
     },
     {
       "date": "27/08/2026",
-      "title": "Easy Run Easy Gelatino",
-      "description": "Salutiamo agosto nel migliore dei modi: falcate leggere sul lungomare, sorrisi e le mani sporche di gelato fuso. La corsa più dolce e divertente della settimana è servita!",
+      "title": "Easy Run Easy Bagnetto",
+      "description": "Il modo migliore per concludere la giornata: una corsa leggera in compagnia e un bagno rilassante a Barcola. Vi aspettiamo!",
       "time": "Meeting: 18:45, Start: 19:00",
-      "location": "porto_vecchio",
-      "city" : "trieste"
+      "location": "barcola",
+      "city": "trieste"
+    },
+    {
+      "date": "03/09/2026",
+      "title": "Easy Run Easy Bagnetto",
+      "description": "Ritmo super easy, 5km in totale relax e un bel tuffo di gruppo a Barcola. L'ideale per staccare la spina e stare assieme.",
+      "time": "Meeting: 18:45, Start: 19:00",
+      "location": "barcola",
+      "city": "trieste"
+    },
+    {
+      "date": "10/09/2026",
+      "title": "Easy Run Easy Bagnetto",
+      "description": "Unisciti alla nostra Easy Run: 5km per chiacchierare e correre senza pensieri, con finale rinfrescante nelle acque di Barcola!",
+      "time": "Meeting: 18:45, Start: 19:00",
+      "location": "barcola",
+      "city": "trieste"
+    },
+    {
+      "date": "17/09/2026",
+      "title": "Easy Run Easy Bagnetto",
+      "description": "Sole, corsa leggera e un bel bagno rigenerante a Barcola. Vieni a goderti il giovedì sera con il gruppo più easy di Trieste.",
+      "time": "Meeting: 18:45, Start: 19:00",
+      "location": "barcola",
+      "city": "trieste"
+    },
+    {
+      "date": "24/09/2026",
+      "title": "Easy Run Easy Bagnetto",
+      "description": "Piede leggero e costume pronto: corriamo 5km in compagnia e poi ci tuffiamo a Barcola per rinfrescarci in allegria!",
+      "time": "Meeting: 18:45, Start: 19:00",
+      "location": "barcola",
+      "city": "trieste"
     },
     {
       "date": "16/03/2026",
