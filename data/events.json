@@ -19,7 +19,7 @@
     {
       "date": "16/06/2026",
       "title": "Easy Run Easy Sunrise",
-      "description": "Start your day off right: an easy run at sunrise and breakfast with friends. The perfect way to kick off the weekend with good vibes and great company!",
+      "description": "Start your day off right: an easy run at sunrise and breakfast with friends.",
       "time": "Meeting: 5:45, Start: 6:00",
       "location": "porto_vecchio",
       "city": "trieste"
@@ -40,6 +40,14 @@
       "location": "barcola",
       "city": "trieste"
     },
+        {
+      "date": "30/06/2026",
+      "title": "Easy Run Easy Sunrise",
+      "description": "Start your day off right: an easy run at sunrise and breakfast with friends.",
+      "time": "Meeting: 5:45, Start: 6:00",
+      "location": "porto_vecchio",
+      "city": "trieste"
+    },
     {
       "date": "02/07/2026",
       "title": "Easy Run Easy Bagnetto",
@@ -54,6 +62,14 @@
       "description": "Corsa, chiacchiere e un bagno al tramonto. Il programma perfetto per questo giovedì a Barcola. 5km facili facili per tutti!",
       "time": "Meeting: 18:45, Start: 19:00",
       "location": "barcola",
+      "city": "trieste"
+    },
+    {
+      "date": "14/07/2026",
+      "title": "Easy Run Easy Sunrise",
+      "description": "Start your day off right: an easy run at sunrise and breakfast with friends.",
+      "time": "Meeting: 5:45, Start: 6:00",
+      "location": "porto_vecchio",
       "city": "trieste"
     },
     {
@@ -73,6 +89,14 @@
       "city": "trieste"
     },
     {
+      "date": "28/07/2026",
+      "title": "Easy Run Easy Sunrise",
+      "description": "Start your day off right: an easy run at sunrise and breakfast with friends.",
+      "time": "Meeting: 5:45, Start: 6:00",
+      "location": "porto_vecchio",
+      "city": "trieste"
+    },
+    {
       "date": "30/07/2026",
       "title": "Easy Run Easy Bagnetto",
       "description": "Gambe leggere, passo rilassato e il mare di Barcola che ci aspetta per un tuffo rigenerante post-allenamento. Chi viene?",
@@ -89,6 +113,14 @@
       "city": "trieste"
     },
     {
+      "date": "11/08/2026",
+      "title": "Easy Run Easy Sunrise",
+      "description": "Start your day off right: an easy run at sunrise and breakfast with friends.",
+      "time": "Meeting: 5:45, Start: 6:00",
+      "location": "porto_vecchio",
+      "city": "trieste"
+    },
+    {
       "date": "13/08/2026",
       "title": "Easy Run Easy Bagnetto",
       "description": "La combo perfetta dell'estate: corsa easy e bagnetto a Barcola. Vieni a fare due chiacchiere e un tuffo rinfrescante con noi!",
@@ -102,6 +134,14 @@
       "description": "Puntuali per 5km di corsa tranquilla e poi un salto in mare a Barcola per celebrare l'estate. Solo vibrazioni positive!",
       "time": "Meeting: 18:45, Start: 19:00",
       "location": "barcola",
+      "city": "trieste"
+    },
+    {
+      "date": "25/08/2026",
+      "title": "Easy Run Easy Sunrise",
+      "description": "Start your day off right: an easy run at sunrise and breakfast with friends.",
+      "time": "Meeting: 5:45, Start: 6:00",
+      "location": "porto_vecchio",
       "city": "trieste"
     },
     {
