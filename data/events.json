@@ -40,7 +40,14 @@
       "location": "barcola",
       "city": "trieste"
     },
-        {
+     {
+      "date": "27/06/2026",
+      "title": "Easy Lungo",
+      "description": "12 km di corsa facile lungo i viali della costa: gambe leggere, mente libera e l'orizzonte cittadino davanti. 🏃‍♂️🏙️",
+      "location": "porto_vecchio",
+      "city": "trieste"
+    },
+    {
       "date": "30/06/2026",
       "title": "Easy Run Easy Sunrise",
       "description": "Start your day off right: an easy run at sunrise and breakfast with friends.",
