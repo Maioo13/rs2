@@ -300,7 +300,7 @@
     async function loadEvents() {
       try {
         // Usiamo il percorso assoluto (con lo slash iniziale) per massima robustezza
-        const response = await fetch(`data/events.json?v=${new Date().getTime()}`);
+        const response = await fetch(`data/events.json5?v=${new Date().getTime()}`);
         if (!response.ok) {
           throw new Error(`Errore nel caricamento del file: ${response.statusText}`);
         }
@@ -327,7 +327,7 @@
 
     async function loadEvents() {
       try {
-        const response = await fetch(`/data/events.json?v=${new Date().getTime()}`);
+        const response = await fetch(`/data/events.json5?v=${new Date().getTime()}`);
         const data = await response.json();
         events = data.events.map(event => {
           const dateParts = event.date.split('/');
