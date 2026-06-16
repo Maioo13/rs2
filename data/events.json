@@ -73,6 +73,14 @@
       "city": "trieste"
     },
     {
+      "date": "11/07/2026",
+      "title": "Easy Lungo",
+      "description": "An easy 12km long run along the coastal avenues: light legs, a clear mind, and the city skyline in front of you. 🏃‍♂️🏙️",
+      "time": "Meeting: 7:00, Start: 7:15",
+      "location": "porto_vecchio",
+      "city": "trieste"
+    },
+    {
       "date": "14/07/2026",
       "title": "Easy Run Easy Sunrise",
       "description": "Start your day off right: an easy run at sunrise and breakfast with friends.",
@@ -94,6 +102,14 @@
       "description": "Corsa tranquilla di 5km e poi tutti in acqua a Barcola per rinfrescare le gambe (e la mente). Portate la vostra energia migliore!",
       "time": "Meeting: 18:45, Start: 19:00",
       "location": "barcola",
+      "city": "trieste"
+    },
+    {
+      "date": "25/07/2026",
+      "title": "Easy Lungo",
+      "description": "An easy 12km long run along the coastal avenues: light legs, a clear mind, and the city skyline in front of you. 🏃‍♂️🏙️",
+      "time": "Meeting: 7:00, Start: 7:15",
+      "location": "porto_vecchio",
       "city": "trieste"
     },
     {
@@ -121,6 +137,14 @@
       "city": "trieste"
     },
     {
+      "date": "08/08/2026",
+      "title": "Easy Lungo",
+      "description": "An easy 12km long run along the coastal avenues: light legs, a clear mind, and the city skyline in front of you. 🏃‍♂️🏙️",
+      "time": "Meeting: 7:00, Start: 7:15",
+      "location": "porto_vecchio",
+      "city": "trieste"
+    },
+    {
       "date": "11/08/2026",
       "title": "Easy Run Easy Sunrise",
       "description": "Start your day off right: an easy run at sunrise and breakfast with friends.",
@@ -142,6 +166,14 @@
       "description": "Puntuali per 5km di corsa tranquilla e poi un salto in mare a Barcola per celebrare l'estate. Solo vibrazioni positive!",
       "time": "Meeting: 18:45, Start: 19:00",
       "location": "barcola",
+      "city": "trieste"
+    },
+    {
+      "date": "22/08/2026",
+      "title": "Easy Lungo",
+      "description": "An easy 12km long run along the coastal avenues: light legs, a clear mind, and the city skyline in front of you. 🏃‍♂️🏙️",
+      "time": "Meeting: 7:00, Start: 7:15",
+      "location": "porto_vecchio",
       "city": "trieste"
     },
     {
