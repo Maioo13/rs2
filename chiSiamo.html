@@ -1,5 +1,6 @@
 <html>
 <head>
+  <link rel="stylesheet" href="css/style.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
@@ -14,8 +15,8 @@
   <link rel="icon" type="image/png" href="icons/logo.png?v=2" />
 
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  <script src="js/language-switcher.js" defer></script>
-  <script src="js/cookie-consent.js" defer></script>
+
+
 </head>
 
 <!-- Cookie Consent Banner -->
@@ -48,9 +49,9 @@
 </div>
 
 <body>
-<div class="relative flex size-full min-h-screen flex-col bg-[#fcf9f8] group/design-root overflow-x-hidden" style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
+<div class="relative flex size-full min-h-screen flex-col bg-[#fcf9f8] group/design-root overflow-x-hidden" >
   <div class="layout-container flex h-full grow flex-col">
-    <!-- Header responsivo -->
+    <!-- Header Navigation -->
     <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f3eae7] px-4 md:px-10 py-3">
       <div class="flex items-center gap-2 md:gap-4 text-[#1c110d]">
         <div class="size-8 md:size-12">
@@ -150,7 +151,7 @@
       </div>
     </div>
 
-    <!-- Contenuto principale -->
+    <!-- Main Content Container -->
     <div class="px-4 md:px-8 lg:px-40 flex flex-1 justify-center py-5">
       <div class="layout-content-container flex flex-col w-full max-w-[960px] flex-1">
         <div class="p-4">
@@ -176,32 +177,12 @@
           Se cerchi un modo per conoscere persone nuove, esplorare la città e far parte di qualcosa di speciale, hai trovato il posto giusto. Ti aspettiamo!
         </p>
 
-        <!--
-        <p class="text-[#1c110d] text-sm md:text-base font-normal leading-normal pb-3 pt-1 px-4">
-          Run Society is more than just a running club; it's a vibrant community built on friendship, shared experiences, and a love for running. We believe in creating a safe
-          and inclusive space where runners of all levels can come together, connect, and enjoy the journey. Our philosophy centers around the joy of running, the camaraderie
-          of group activities, and the exploration of our beautiful city, Trieste, and its surroundings.
-        </p>
-        <p class="text-[#1c110d] text-sm md:text-base font-normal leading-normal pb-3 pt-1 px-4">
-          What sets us apart is our commitment to fostering a welcoming environment for everyone. We are a no-fee club, meaning there are no membership costs to join our runs
-          and events. We believe that running should be accessible to all, and we strive to remove any barriers that might prevent people from participating.
-        </p>
-        <p class="text-[#1c110d] text-sm md:text-base font-normal leading-normal pb-3 pt-1 px-4">
-          Beyond the runs, we organize a variety of social activities that make our club unique. From our relaxed 'Easy Aperitivo' gatherings after runs, to enjoying a
-          refreshing 'Gelatino' together on warm evenings, and even taking a 'Bagnetto' (swim) in the sea after a coastal run, we believe in celebrating our shared passion for
-          running and life. These social events are an integral part of our club culture, providing opportunities to connect, build friendships, and create lasting memories.
-        </p>
-        <p class="text-[#1c110d] text-sm md:text-base font-normal leading-normal pb-3 pt-1 px-4">
-          Whether you're a seasoned marathoner or just starting your running journey, Run Society welcomes you with open arms. Join us and experience the joy of running in a
-          supportive and fun-loving community.
-        </p>
-        -->
 
       </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="flex justify-center mt-auto" style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif; background-color: #fcf9f8;'>
+    <!-- Footer Section -->
+    <footer class="flex justify-center mt-auto" >
       <div class="flex max-w-[960px] flex-1 flex-col">
         <footer class="flex flex-col gap-4 md:gap-6 px-4 md:px-5 py-6 md:py-10 text-center @container">
           <div class="flex flex-col sm:flex-row items-center justify-center gap-4 md:gap-6 @[480px]:justify-around">
@@ -260,17 +241,6 @@
               </svg>
             </a>
 
-            <!--
-            <a href="#">
-              <div class="text-[#9b604b]" data-icon="FacebookLogo" data-size="24px" data-weight="regular">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                  <path
-                    d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z"
-                  ></path>
-                </svg>
-              </div>
-            </a>
-            -->
 
           </div>
           <p class="text-[#9b604b] text-xs md:text-base font-normal leading-normal">@2024 Run Society. All rights reserved.</p>

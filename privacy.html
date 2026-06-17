@@ -1,5 +1,6 @@
 <html>
 <head>
+  <link rel="stylesheet" href="css/style.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
@@ -14,8 +15,8 @@
   <link rel="icon" type="image/png" href="icons/logo.png?v=2" />
 
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  <script src="js/language-switcher.js"></script>
-  <script src="js/cookie-consent.js" defer></script>
+
+
 </head>
 
 <!-- Cookie Consent Banner -->
@@ -48,7 +49,7 @@
 </div>
 
 <body>
-<div class="relative flex size-full min-h-screen flex-col bg-[#fcf9f8] group/design-root overflow-x-hidden" style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
+<div class="relative flex size-full min-h-screen flex-col bg-[#fcf9f8] group/design-root overflow-x-hidden" >
   <div class="layout-container flex h-full grow flex-col">
     <!-- Header responsivo -->
     <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f3eae7] px-4 md:px-10 py-3">
@@ -184,7 +185,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="flex justify-center mt-auto" style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
+    <footer class="flex justify-center mt-auto" >
       <div class="flex max-w-[960px] flex-1 flex-col">
         <footer class="flex flex-col gap-4 md:gap-6 px-4 md:px-5 py-6 md:py-10 text-center @container">
           <div class="flex flex-col sm:flex-row items-center justify-center gap-4 md:gap-6 @[480px]:justify-around">
@@ -243,17 +244,6 @@
               </svg>
             </a>
 
-            <!--
-            <a href="#">
-              <div class="text-[#9b604b]" data-icon="FacebookLogo" data-size="24px" data-weight="regular">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                  <path
-                    d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z"
-                  ></path>
-                </svg>
-              </div>
-            </a>
-            -->
 
           </div>
           <p class="text-[#9b604b] text-xs md:text-base font-normal leading-normal">@2024 Run Society. All rights reserved.</p>
