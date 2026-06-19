@@ -13,7 +13,6 @@ class LanguageSwitcher {
       this.updateLanguageDisplay();
       this.translatePage();
     } catch (error) {
-      console.error('Errore nell\'inizializzazione del cambio lingua:', error);
     }
   }
 
@@ -22,7 +21,6 @@ class LanguageSwitcher {
       const response = await fetch('data/translations.json');
       this.translations = await response.json();
     } catch (error) {
-      console.error('Errore nel caricamento delle traduzioni:', error);
     }
   }
 

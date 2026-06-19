@@ -5,7 +5,6 @@ const fs = require('fs');
 
 const copyPatterns = [
   { from: 'img', to: 'img' },
-  { from: 'css', to: 'css' },
   { from: 'js/vendor', to: 'js/vendor' },
   { from: 'data', to: 'data' },
   { from: 'robots.txt', to: 'robots.txt' },

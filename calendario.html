@@ -15,7 +15,7 @@
   <title>Events Calendar | Run Society</title>
   <link rel="icon" type="image/png" href="icons/logo.png?v=2" />
 
-  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
 
 
 
@@ -284,7 +284,6 @@
         initCityFilter();
         initCalendar();
       } catch (error) {
-        console.error('Errore Dettagliato:', error);
         const container = document.getElementById("event-list-items");
         if (container) container.innerHTML = `<p class="text-red-600 text-center py-4">Oops! Non è stato possibile caricare gli eventi.</p>`;
         events =[];
